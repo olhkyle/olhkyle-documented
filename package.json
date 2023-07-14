@@ -1,0 +1,40 @@
+{
+	"name": "olhkyle-me",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@mdx-js/loader": "^2.3.0",
+		"@mdx-js/react": "^2.3.0",
+		"@next/mdx": "^13.4.10",
+		"@types/mdx": "^2.0.5",
+		"@types/node": "20.4.2",
+		"@types/react": "18.2.15",
+		"@types/react-dom": "18.2.7",
+		"autoprefixer": "10.4.14",
+		"axios": "^1.4.0",
+		"clsx": "^1.2.1",
+		"eslint-config-next": "13.4.10",
+		"lodash": "^4.17.21",
+		"next": "13.4.10",
+		"next-themes": "^0.2.1",
+		"postcss": "8.4.26",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-icons": "^4.10.1",
+		"recoil": "^0.7.7",
+		"tailwindcss": "3.3.3"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.195",
+		"@typescript-eslint/parser": "^6.0.0",
+		"eslint": "^8.44.0",
+		"prettier": "3.0.0",
+		"typescript": "^5.1.6"
+	}
+}

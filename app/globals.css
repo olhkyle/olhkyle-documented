@@ -1,0 +1,227 @@
+@import '../styles/font.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-weight: 400;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	--color-black: #191a20;
+	--color-white: #fff;
+
+	--color-gray-50: #f7f7f7;
+	--color-gray-100: #f9fafb;
+	--color-gray-200: #e6e9ee;
+	--color-gray-300: #dde0e4;
+	--color-gray-400: #818890;
+	--color-gray-500: #535661;
+	--color-gray-600: #4b4c53;
+	--color-gray-700: #3a3d4a;
+	--color-gray-800: #2e3039;
+	--color-gray-900: #1f2028;
+
+	--color-green-100: #76e4b8;
+	--color-green-200: #3fd599;
+	--color-green-300: #15c47e;
+	--color-green-400: #0e7b6c;
+
+	--color-blue-100: #0687f0;
+	--color-blue-200: #2272eb;
+	--color-blue-300: #e8f2ff;
+
+	--color-purple: #6466f1;
+
+	--color-yellow: #ffd644;
+
+	--color-orange-100: #ffa927;
+	--color-orange-200: #fe9800;
+
+	--color-red: #ff4545;
+	--color-dark: #090b16;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body[data-theme='dark'] {
+	background-color: var(--color-dark);
+	color: var(--color-white);
+}
+
+body[data-theme='light'] {
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
+
+.hide-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera*/
+}
+
+@layer base {
+	.font-outline-1 {
+		-webkit-text-stroke: 1px black;
+	}
+	.dark-outline-1 {
+		-webkit-text-stroke: 1px white;
+	}
+	.dark-outline-2 {
+		-webkit-text-stroke: 2px white;
+	}
+	.font-outline-2 {
+		-webkit-text-stroke: 2px black;
+	}
+	.font-outline-3 {
+		-webkit-text-stroke: 3px black;
+	}
+}
+
+.flex-center {
+	@apply flex justify-center items-center;
+}
+
+.toggle-dark {
+	@apply bg-black text-white dark:bg-white dark:text-black;
+}
+
+.hover-underline {
+	@apply hover:underline hover:underline-offset-4 hover:decoration-blue-200 hover:text-blue-200 cursor-pointer;
+}
+
+.responsive-text-gray {
+	@apply text-gray-500 dark:text-gray-300;
+}
+
+.hover-ring {
+	@apply hover:ring-2 hover:ring-blue-200 hover:ring-offset-4 ring-offset-white dark:ring-offset-dark transition delay-100 duration-200 ease-in-out;
+}
+
+/* Inline code */
+
+pre {
+	background-color: #071726;
+	border-radius: 12px;
+}
+
+pre > code.language-ts {
+	font-family: 'Dank Mono';
+	font-weight: 600;
+	text-shadow: none;
+}
+
+blockquote {
+	margin-left: calc(-1 * 1.5rem);
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+	padding: 1rem 0 1rem 1.5rem;
+	border-left: 0.25rem solid var(--color-blue-200);
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+hr {
+	background: var(--color-blue-200);
+	height: 1px;
+	border: 0;
+}
+
+/* 
+:not(pre) > code[class*='language-'] {
+	border-radius: 0.3em;
+	background: rgba(175, 184, 193, 0.2) !important;
+	text-shadow: none;
+	color: var(--color-accent);
+	font-size: 14px;
+	font-weight: 600;
+	padding: 1rem 1.5rem;
+	white-space: normal;
+}
+
+pre > code[class*='language-'] > .token.attr-name,
+.language-js > code[class*='language-'] > .token.attr-name {
+	color: rgb(173, 219, 103);
+	font-style: italic;
+}
+
+pre > code[class*='language-'] > .token.comment,
+.language-js > code[class*='language-'] > .token.comment {
+	color: rgb(128, 147, 147);
+}
+
+pre > code[class*='language-'] > .token.string,
+.language-js > code[class*='language-'] > .token.url {
+	color: rgb(173, 219, 103);
+}
+
+pre > code[class*='language-'] > .token.variable,
+.language-js > code[class*='language-'] > .token.variable {
+	color: rgb(214, 222, 235);
+}
+
+pre > code[class*='language-'] > .token.number,
+.language-js > code[class*='language-'] > .token.number {
+	color: rgb(247, 140, 108);
+}
+
+pre > code[class*='language-'] > .token.builtin,
+pre > code[class*='language-'] > .token.char,
+pre > code[class*='language-'] > .token.constant,
+pre > code[class*='language-'] > .token.function {
+	color: rgb(130, 170, 255);
+}
+
+pre > code[class*='language-'] > .token.punctuation {
+	color: rgb(199, 146, 234);
+}
+
+pre > code[class*='language-'] > .token.selector,
+pre > code[class*='language-'] > .token.doctype {
+	color: rgb(199, 146, 234);
+	font-style: 'italic';
+}
+
+pre > code[class*='language-'] > .token.class-name {
+	color: rgb(255, 203, 139);
+}
+
+pre > code[class*='language-'] > .token.tag,
+pre > code[class*='language-'] > .token.operator,
+pre > code[class*='language-'] > .token.keyword {
+	color: #ffa7c4;
+}
+
+pre > code[class*='language-'] > .token.boolean {
+	color: rgb(255, 88, 116);
+}
+
+pre > code[class*='language-'] > .token.property {
+	color: rgb(128, 203, 196);
+}
+
+pre > code[class*='language-'] > .token.namespace {
+	color: rgb(178, 204, 214);
+} */
+
+/* Media queries */
+
+@media (max-width: 42rem) {
+	blockquote {
+		padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
+		margin-left: var(--spacing-0);
+	}
+	ul,
+	ol {
+		list-style-position: inside;
+	}
+}
