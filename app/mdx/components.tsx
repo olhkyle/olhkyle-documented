@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export const components = {
 	h1: ({ children }: { children: React.ReactNode }) => <h1 style={{ fontSize: '45px' }}>{children}</h1>,
 	h2: ({ children }: { children: React.ReactNode }) => <h2 style={{ fontSize: '36px' }}>{children}</h2>,
