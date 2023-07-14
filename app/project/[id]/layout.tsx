@@ -3,7 +3,6 @@
 import { useRouter } from 'next/navigation';
 import { FiArrowLeft } from 'react-icons/fi';
 import { MainTitle } from '@/components';
-import { _Project } from '@/components/ProjectContent';
 
 interface ProjectProps {
 	params: { id: string };

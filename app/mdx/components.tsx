@@ -1,11 +1,6 @@
 import Image from 'next/image';
 
-const ResponsiveImage = (props: any) => (
-	<Image alt={props.alt} sizes="100vw" style={{ width: '100%', height: 'auto' }} {...props} />
-);
-
 export const components = {
-	img: ResponsiveImage,
 	h1: ({ children }: { children: React.ReactNode }) => <h1 style={{ fontSize: '45px' }}>{children}</h1>,
 	h2: ({ children }: { children: React.ReactNode }) => <h2 style={{ fontSize: '36px' }}>{children}</h2>,
 	h3: ({ children }: { children: React.ReactNode }) => <h3 style={{ fontSize: '27px' }}>{children}</h3>,

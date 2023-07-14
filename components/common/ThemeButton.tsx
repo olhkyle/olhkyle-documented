@@ -1,6 +1,6 @@
 'use client';
 
-import { FiSun, FiMoon, FiCircle } from 'react-icons/fi';
+import { FiSun, FiMoon } from 'react-icons/fi';
 import { FaCircleNotch } from 'react-icons/fa';
 import { useTheme } from 'next-themes';
 import React from 'react';
