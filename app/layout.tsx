@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 	title: 'Olhkyle',
 	description: `About kyle`,
 	themeColor: [
-		{ media: '(prefers-color-scheme: light)', color: '#191a20' },
+		{ media: '(prefers-color-scheme: light)', color: '#090B16' },
 		{ media: '(prefers-color-scheme: dark)', color: '#fff' },
 	],
 };
