@@ -51,13 +51,11 @@ html {
 	height: 100%;
 }
 
-html[data-theme='dark'],
 body[data-theme='dark'] {
 	background-color: var(--color-dark);
 	color: var(--color-white);
 }
 
-html[data-theme='light'],
 body[data-theme='light'] {
 	background-color: var(--color-white);
 	color: var(--color-black);
