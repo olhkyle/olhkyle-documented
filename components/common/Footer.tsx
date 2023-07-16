@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import SocialBadge from './SocialBadge';
 import { BLOG, GITHUB, LINKEDIN } from '../../constants/url';
 import { AiOutlineGithub, AiOutlineLink } from 'react-icons/ai';

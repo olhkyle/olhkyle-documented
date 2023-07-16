@@ -1,4 +1,3 @@
-import React from 'react';
 import DoubleSubTitle from './titles/DoubleSubTitle';
 import { GMAIL } from '../../constants/url';
 

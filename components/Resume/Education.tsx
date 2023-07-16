@@ -1,4 +1,3 @@
-import React from 'react';
 import formattedDate from '../../utils/formattedDate';
 
 interface EducationProps {

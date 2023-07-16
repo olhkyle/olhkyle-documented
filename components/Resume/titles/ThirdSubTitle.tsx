@@ -1,4 +1,3 @@
-import React from 'react';
 import { EmphasisCircle } from '../../common';
 
 interface DoubleSubTitleProps {

@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import { FiArrowUp } from 'react-icons/fi';
 import useScroll from '../../hooks/useScroll';
 

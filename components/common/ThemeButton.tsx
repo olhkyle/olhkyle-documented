@@ -1,8 +1,8 @@
 'use client';
 
+import React from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { FaCircleNotch } from 'react-icons/fa';
-import React from 'react';
 import useTheme, { ToggleTheme } from '@/hooks/useTheme';
 
 interface ThemeButtonProps {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { CardTitle, KindOfDeveloperItem } from '.';
 
 const kindOfDeveloper: { title: string; content: string[] }[] = [

@@ -1,4 +1,3 @@
-import React from 'react';
 import { CardTitle } from '.';
 
 const strengths: string[] = [

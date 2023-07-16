@@ -8,7 +8,7 @@ export default function Overview() {
 	return (
 		<div className="flex justify-between items-center">
 			<div>
-				<h2 className="text-[3rem] font-bold break-keep sm:text-[2.5rem] md:text-6xl">Hyukmin Kwon</h2>
+				<h2 className="text-[3rem] font-bold break-keep sm:text-[2.5rem] md:text-[64px]">Hyukmin Kwon</h2>
 				<p className="mt-1 ml-1 text-lg md:text-xl break-keep">FrontEnd Developer with background of Architecture</p>
 				<ul className="mt-10 ml-6 text-base responsive-text-gray list-disc break-keep">
 					{overview.map(value => (

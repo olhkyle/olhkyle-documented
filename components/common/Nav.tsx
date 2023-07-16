@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import { usePathname } from 'next/navigation';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import useSideNavActive from '../../hooks/useSideNavActive';

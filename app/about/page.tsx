@@ -13,10 +13,8 @@ import {
 export default function AboutMe() {
 	return (
 		<>
-			<div className="flex justify-between items-center w-full sm:mt-[2rem]">
-				<div className="flex flex-col justify-between">
-					<MainTitle>About Me.</MainTitle>
-				</div>
+			<div className="flex justify-between w-full sm:mt-[2rem]">
+				<MainTitle>About Me.</MainTitle>
 				<GradientSquare />
 			</div>
 			<Cover />
