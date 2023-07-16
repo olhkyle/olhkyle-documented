@@ -31,7 +31,7 @@ export default function Nav() {
 								</li>
 							))}
 						</ul>
-						<ThemeButton position="in" />
+						<ThemeButton position="nav" />
 					</div>
 					<button className="p-4 sm:hidden" onClick={toggleActive}>
 						<RxHamburgerMenu size="27" />

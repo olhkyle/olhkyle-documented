@@ -18,6 +18,7 @@ const useTheme = () => {
 		if (document) {
 			document.body.dataset.theme = theme;
 			localStorage.setItem(THEME, theme as string);
+			document.cookie = `theme=${theme}; path=/;`;
 		}
 	}, [theme]);
 

@@ -2,7 +2,7 @@ import './globals.css';
 import React from 'react';
 import type { Metadata } from 'next';
 import { Footer, Nav, ScrollToTopButton } from '@/components';
-import ThemeProvider from './providers';
+import { cookies } from 'next/dist/client/components/headers';
 
 export const metadata: Metadata = {
 	title: 'Olhkyle',
@@ -14,6 +14,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+	const cookie = cookies().get('theme');
+
 	return (
 		<html lang="en">
 			<head>
@@ -26,14 +28,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					name="viewport"
 					content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
 				/>
+				<meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)" />
+				<meta name="theme-color" content="#090b16" media="(prefers-color-scheme: dark)" />
 			</head>
-			<body>
-				<ThemeProvider>
-					<Nav />
-					<main className="mx-auto px-[1rem] h-full sm:w-[640px] md:w-[768px] lg:w-[1024px]">{children}</main>
-					<Footer />
-					<ScrollToTopButton topPosToStopShowing={300} />
-				</ThemeProvider>
+			<body data-theme={cookie !== undefined && cookie.value}>
+				<Nav />
+				<main className="mx-auto px-[1rem] h-full sm:w-[640px] md:w-[768px] lg:w-[1024px]">{children}</main>
+				<Footer />
+				<ScrollToTopButton topPosToStopShowing={300} />
 			</body>
 		</html>
 	);

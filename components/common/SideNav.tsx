@@ -1,13 +1,13 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { FiArrowLeft } from 'react-icons/fi';
 import { MdArrowRight } from 'react-icons/md';
 import links from '../../constants/links';
 import { NavLink, ThemeButton } from '.';
 import { GMAIL } from '../../constants/url';
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
 
 interface SideNavProps {
 	isActive: boolean;
@@ -31,7 +31,7 @@ export default function SideNav({ isActive, toggleActive }: SideNavProps) {
 						💿 LHKYLE
 					</Link>
 				</h1>
-				<ThemeButton position="out" />
+				<ThemeButton position="sideNav" />
 			</div>
 
 			<div className="flex h-full">
