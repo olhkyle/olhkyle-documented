@@ -3,7 +3,7 @@ import { debounce } from 'lodash';
 
 const useScreenHeightResize = () => {
 	const setScreenSize = debounce(() => {
-		let vh = window.innerHeight * 0.01;
+		const vh = window.innerHeight * 0.01;
 		document.documentElement.style.setProperty('--vh', `${vh}px`);
 	}, 500);
 
