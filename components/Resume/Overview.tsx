@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import mee from '@/public/resume/mee.png';
+
 const overview: string[] = [
 	'Striving for steady growth',
 	'Believing in the joy of immersing oneself in something',
@@ -17,7 +20,7 @@ export default function Overview() {
 				</ul>
 			</div>
 			<div className="hidden justify-center items-center mr-2 w-64 border-[1px] border-dark object-cover overflow-hidden rounded-full sm:flex">
-				<img src="./resume/mee.png" alt="me" className="block w-full h-full" />
+				<Image src={mee} alt="me" sizes="100vw" className="block w-full h-full" priority />
 			</div>
 		</div>
 	);
