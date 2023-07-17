@@ -10,14 +10,24 @@ import {
 	TRELLO_GITHUB,
 } from '../constants/url';
 
-const projects: Project[] = [
+import { StaticImageData } from 'next/image';
+import { thumbnails } from '@/constants/thumbnails';
+
+export interface ProjectWithThumbnail extends Project {
+	thumbnail: StaticImageData;
+}
+
+const [trelloMock, fineappleMock, escMock] = thumbnails;
+
+const projects: ProjectWithThumbnail[] = [
 	{
 		title: 'Vanilla Trello',
 		subtitle: '',
 		team: false,
-		startDate: new Date(2023, 6, 20),
+		startDate: new Date('2023-06-20'),
 		endDate: '',
 		composition: '',
+		thumbnail: trelloMock,
 		links: [
 			{
 				title: 'Github',
@@ -46,9 +56,10 @@ const projects: Project[] = [
 		title: 'FineApple',
 		subtitle: '',
 		team: true,
-		startDate: new Date(2023, 4, 17),
-		endDate: new Date(2023, 5, 23),
+		startDate: new Date('2023-04-17'),
+		endDate: new Date('2023-05-23'),
 		composition: '3 FE',
+		thumbnail: fineappleMock,
 		links: [
 			{ title: 'Github', href: FINEAPPLE_GITHUB, icon: <AiOutlineGithub size="22" /> },
 			{
@@ -97,9 +108,10 @@ const projects: Project[] = [
 		title: 'ESC',
 		subtitle: '(Easy Sports Club)',
 		team: true,
-		startDate: new Date(2022, 11, 20),
-		endDate: new Date(2022, 12, 30),
+		startDate: new Date('2022-11-20'),
+		endDate: new Date('2022-12-30'),
 		composition: '2 FE & 3 BE',
+		thumbnail: escMock,
 		links: [
 			{
 				title: 'Github',
