@@ -24,7 +24,7 @@ export default function Nav() {
 
 					<div className="hidden justify-between items-center gap-6 ml-10 px-2 min-w-[440px] sm:flex">
 						<ul className="flex gap-2 items-center">
-							{links.map((link, idx) => (
+							{links.slice(0, 3).map((link, idx) => (
 								<li key={idx}>
 									<NavLink link={link} currentPath={pathname.slice(1)} />
 								</li>

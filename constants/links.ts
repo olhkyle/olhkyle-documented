@@ -1,3 +1,3 @@
-const links: string[] = ['About', 'Resume', 'Portfolio'];
+const links: string[] = ['About', 'Resume', 'Portfolio', 'Blog'];
 
 export default links;
