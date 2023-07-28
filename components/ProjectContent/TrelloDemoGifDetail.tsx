@@ -15,7 +15,7 @@ export default function TrelloDemoGifDetail() {
 			<div className="flex justify-between items-center">
 				<h3 className="pl-6 border-l-4 font-bold text-2xl sm:text-4xl">{'DEMO'}</h3>
 				<button type="button" className="font-bold" onClick={() => setActive(!isActive)}>
-					<PiPlusBold size="27" className={`${isActive ? 'rotate-45' : 'rotate-0'} duration-300`} />
+					<PiPlusBold size="27" className={`${isActive ? 'rotate-45 text-blue-200' : 'rotate-0'} duration-300`} />
 				</button>
 			</div>
 			<div className={`${isActive ? 'grid' : 'hidden'} grid-rows-3 sm:grid-rows-3 sm:grid-flow-col gap-4 mt-8 p-4`}>
