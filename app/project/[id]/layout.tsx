@@ -1,14 +1,16 @@
 'use client';
 
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { FiArrowLeft } from 'react-icons/fi';
-import { MainTitle } from '@/components';
+import { MainTitle, Spacer } from '@/components';
 import { projects } from '@/data';
 import formattedDate from '@/utils/formattedDate';
 import { thumbnails } from '@/constants/thumbnails';
 import { OverviewDetail, TechStackDetail, TrelloDemoGifDetail } from '@/components/ProjectContent';
+import MainFeatureDetail from '@/components/ProjectContent/MainFeatureDetail';
 
 interface ProjectProps {
 	params: { id: string };
@@ -17,7 +19,9 @@ interface ProjectProps {
 export default function Project({ params: { id } }: ProjectProps) {
 	const router = useRouter();
 
-	const { links, overviewEN, startDate, endDate, techStacks, myTasks } = projects.find(
+	const imageContainerRef = React.useRef<HTMLDivElement | null>(null);
+
+	const { links, overviewEN, startDate, endDate, techStacks, myTasks, mainFeatures } = projects.find(
 		project => project.title === id.replace(/-/g, ' '),
 	) as Project;
 
@@ -32,9 +36,9 @@ export default function Project({ params: { id } }: ProjectProps) {
 						<FiArrowLeft size="24" />
 					</button>
 				</div>
-				<div className="block sm:flex flex-col justify-between sm:flex-row sm:items-center">
+				<div className="block sm:flex flex-col justify-between xl:flex-row">
 					<MainTitle>{id!.replace(/-/g, ' ')}®</MainTitle>
-					<div className="text-end text-xl font-bold sm:text-[60px]">{`[${
+					<div className="mt-10 text-end text-xl font-bold sm:text-[32px] md:text-[48px]">{`[${
 						formattedDate({ startDate, endDate }).split('-')[1] ?? 'Ongoing'
 					}]`}</div>
 				</div>
@@ -54,12 +58,21 @@ export default function Project({ params: { id } }: ProjectProps) {
 					<p className="font-medium text-sm sm:text-lg">{overviewEN}</p>
 					<button
 						type="button"
-						className="hover-ring w-[150px] h-[40px] border-[1px] border-dark dark:border-white rounded-full font-bold hover:text-blue-200 hover:border-0 text-xs sm:text-lg">
+						className="hover-ring w-[150px] h-[40px] border-[1px] border-dark dark:border-white rounded-full font-bold hover:text-blue-200 hover:border-0 text-xs sm:text-lg"
+						onClick={() => {
+							const $target = imageContainerRef.current;
+
+							$target &&
+								window.scrollTo({
+									top: $target.offsetHeight + $target.offsetTop,
+									behavior: 'smooth',
+								});
+						}}>
 						Discover ↓
 					</button>
 				</div>
 			</div>
-			<div className="flex flex-col my-12">
+			<div className="flex flex-col my-12" ref={imageContainerRef}>
 				<Image
 					src={thumbnails.find(thumb => thumb.src.includes(id.toLowerCase()))!}
 					alt="trello-mock"
@@ -69,12 +82,11 @@ export default function Project({ params: { id } }: ProjectProps) {
 			</div>
 
 			<TechStackDetail data={techStacks} />
+			{mainFeatures && <MainFeatureDetail data={mainFeatures} />}
 			<OverviewDetail data={myTasks} />
 			{id === 'Vanilla-Trello' && <TrelloDemoGifDetail />}
 
-			<div className="mt-8 text-center text-xl sm:text-2xl text-gray-500 font-bold">
-				The rest of the content will be updated soon 🚀
-			</div>
+			<Spacer width={40} />
 		</>
 	);
 }

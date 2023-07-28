@@ -51,6 +51,28 @@ const projects: ProjectWithThumbnail[] = [
 		],
 		improvement: ['currently refactoring'],
 		techStacks: ['HTML', 'SASS', 'JavaScript', 'lodash'],
+		mainFeatures: [
+			{
+				title: 'List',
+				content: ['Create New List', 'Update List Title TextArea Content', 'Delete List', 'Drag & Drop between Lists'],
+			},
+			{
+				title: 'Card',
+				content: [
+					'Add a new Card with setting the title of Card',
+					'Click Card and open Modal to update Card Title Content',
+					'Delete Card',
+					'Drag & Drop Card within the boundary of one List or from different Lists',
+				],
+			},
+			{
+				title: 'Modal',
+				content: [
+					'Update Card Title Content',
+					'Add detailed Description one-to-one correspondence to Card and show Icon if the description is added.',
+				],
+			},
+		],
 	},
 	{
 		title: 'FineApple',
@@ -103,6 +125,38 @@ const projects: ProjectWithThumbnail[] = [
 			'Firebase',
 			'Github Actions',
 		],
+		mainFeatures: [
+			{
+				title: 'Auth',
+				content: [`Login`, 'SignUp', 'Edit Profile'],
+			},
+			{
+				title: 'Theme',
+				content: [`light & dark mode`],
+			},
+			{
+				title: 'Search',
+				content: [`Search for questions related to the topics you're interested in`],
+			},
+			{
+				title: 'Question',
+				content: [
+					`Create a question if you don't see what you're looking for`,
+					`Provide a list of questions related to the topic`,
+					`Provide a list of popular articles related to the topic`,
+					`Provide Like Feature to collect my liked Questions`,
+					`Provide a list of questions which I pressed the like button`,
+				],
+			},
+			{ title: 'Comment', content: [`Reply to a question`, `Provide Like Feature on Comment`] },
+			{
+				title: 'Rank & Reward',
+				content: [
+					`Give points to people who contribute to the community (ask questions, replies comment to post)`,
+					`Provide a ranking UI based on points and levels `,
+				],
+			},
+		],
 	},
 	{
 		title: 'ESC',
@@ -149,6 +203,35 @@ const projects: ProjectWithThumbnail[] = [
 			'Emotion',
 			'Github Actions',
 			'AWS Cloudfront/S3',
+		],
+		mainFeatures: [
+			{
+				title: 'Auth',
+				content: [`Login(User | Manager)`, 'SignUp', 'Social Login', 'Find My Password', 'My Page'],
+			},
+			{
+				title: 'User Access',
+				content: [`Notification`, `Reservation List`, `Bookmark List`, `Recently Viewed Gyms`],
+			},
+			{
+				title: 'User Action',
+				content: [
+					`Use GeoLocation to find registered gyms within 3 kilometers of you`,
+					`Find basic information about the gym and its rating`,
+					`Read reviews to see what people have to say about the gym`,
+					`Make a Reservation of Gym and rent goods`,
+					`Write a review of gym after use`,
+					`Bookmark gyms`,
+				],
+			},
+			{
+				title: 'Manager Access',
+				content: [`Notification`, `Reservation List`],
+			},
+			{
+				title: 'Manager Action',
+				content: [`Register manager's own gym`, `Check Reservation Status of each gym`],
+			},
 		],
 	},
 ];

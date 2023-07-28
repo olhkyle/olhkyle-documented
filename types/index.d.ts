@@ -18,6 +18,7 @@ declare type Project = {
 	myTasks: string[];
 	improvement: string[];
 	techStacks: string[];
+	mainFeatures: { title: string; content: string[] }[];
 };
 
 declare type SkillStack = { skill: string[]; description: string };

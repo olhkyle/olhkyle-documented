@@ -17,7 +17,7 @@ export default function PortfolioProject({
 						alt={title}
 						sizes="100vw"
 						priority
-						className="rounded-2xl object-contain object-center w-full h-auto border-2"
+						className="w-full h-auto rounded-2xl object-contain object-center border-2"
 					/>
 				</figure>
 				<div className="flex flex-col gap-4 mt-6">
