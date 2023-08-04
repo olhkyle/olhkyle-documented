@@ -16,14 +16,15 @@ export default function Cover() {
 				<div>
 					<p className="py-2 px-8">I graduated from Kookmin University in 2023 with studying Architecture. </p>
 					<p className="py-2 px-8">
-						Smoothly got into programming field, because I like to designing and building digital products, such as
-						web-app. I study Web FrontEnd Development with a passion, focusing on UI / UX details.
+						I've always enjoyed and been interested in implementing visual things. While learning and practicing
+						Architecture, I realized the importance of visual organization and functionality, especially with the
+						various tools I use to express Architecture. I became very interested in the software aspect of these tools,
+						especially in UI/UX. I smoothly fell into FrontEnd development that actually implements such a great UI UX
 					</p>
-
 					<p className="py-2 px-8">
-						Currently, I'm working on personal projects and learning Typescript and algorithms to create habits and
-						environments for steady growth. I'm also trying to keep track of my projects and learnings to use them as
-						growth indicators and to look back on them later and fill my shortage.
+						Currently, I'm working on personal projects and learning Typescript and Algorithms with JavaScript to create
+						habits and environments for steady growth. I'm also trying to keep track of my projects and learnings to use
+						them as growth indicators and to look back on them later and fill my shortage.
 					</p>
 				</div>
 			</div>
