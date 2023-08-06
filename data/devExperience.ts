@@ -1,3 +1,9 @@
+import { Education } from './education';
+
+export interface DevExperience extends Education {
+	links: string[];
+}
+
 const devExperience: DevExperience[] = [
 	{
 		id: '1',
