@@ -1,5 +1,15 @@
 import { AAVS, CLASS101, DESIGNTHOU } from '../constants/url';
 
+export interface Etc {
+	id: string;
+	title: string;
+	department: string;
+	description: string;
+	startDate: Date;
+	endDate: Date | 'Present' | '';
+	link: string;
+}
+
 const etc: Etc[] = [
 	{
 		id: '1',

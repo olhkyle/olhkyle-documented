@@ -1,3 +1,8 @@
+export interface SkillStack {
+	skill: string[];
+	description: string;
+}
+
 const skills: SkillStack[] = [
 	{
 		skill: ['HTML'],

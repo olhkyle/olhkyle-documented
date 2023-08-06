@@ -1,15 +1,6 @@
+import { Etc } from '@/data/etc';
 import formattedDate from '../../utils/formattedDate';
 import { AiOutlineLink } from 'react-icons/ai';
-
-interface Etc {
-	id: string;
-	title: string;
-	department: string;
-	description: string;
-	startDate: Date;
-	endDate: Date | 'Present' | '';
-	link: string;
-}
 
 interface EtcProps {
 	_etc: Etc;
