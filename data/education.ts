@@ -1,3 +1,12 @@
+export interface Education {
+	id: string;
+	title: string;
+	subTitle: string;
+	description: string[] | null;
+	startDate: Date;
+	endDate: Date;
+}
+
 const education: Education[] = [
 	{
 		id: '1',

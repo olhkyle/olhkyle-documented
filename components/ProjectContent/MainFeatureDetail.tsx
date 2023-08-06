@@ -3,7 +3,11 @@
 import React from 'react';
 import { PiPlusBold } from 'react-icons/pi';
 
-export default function MainFeatureDetail({ data }: { data: { title: string; content: string[] }[] }) {
+interface MainFeatureDetail {
+	data: { title: string; content: string[] }[];
+}
+
+export default function MainFeatureDetail({ data }: MainFeatureDetail) {
 	const [isActive, setActive] = React.useState(false);
 
 	return (

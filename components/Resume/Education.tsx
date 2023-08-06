@@ -1,3 +1,4 @@
+import { Education } from '@/data/education';
 import formattedDate from '../../utils/formattedDate';
 
 interface EducationProps {

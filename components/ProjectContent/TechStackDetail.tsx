@@ -3,7 +3,11 @@
 import React from 'react';
 import { PiPlusBold } from 'react-icons/pi';
 
-export default function TechStackDetail({ data }: { data: string[] }) {
+interface TechStackDetailProps {
+	data: string[];
+}
+
+export default function TechStackDetail({ data }: TechStackDetailProps) {
 	const [isActive, setActive] = React.useState(false);
 
 	return (

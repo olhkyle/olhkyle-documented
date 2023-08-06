@@ -1,4 +1,9 @@
+import { Education } from '@/data/education';
 import formattedDate from '../../utils/formattedDate';
+
+interface DevExperience extends Education {
+	links: string[];
+}
 
 interface DevExperienceProps {
 	experience: DevExperience;

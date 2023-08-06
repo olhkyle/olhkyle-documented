@@ -1,7 +1,12 @@
 import Link from 'next/link';
+import { Project } from '@/data/projects';
 import { Callout, HighlightText } from '../common';
 import { ThirdSubTitle, ProjectTitle, DoubleSubTitle } from '.';
 import formattedDate from '../../utils/formattedDate';
+
+interface ProjectProps {
+	project: Project;
+}
 
 export default function Project({
 	project: {
@@ -18,9 +23,7 @@ export default function Project({
 		improvement,
 		techStacks,
 	},
-}: {
-	project: Project;
-}) {
+}: ProjectProps) {
 	return (
 		<li className="grid grid-cols-1 sm:grid-flow-col gap-4 mt-[2.5rem] sm:grid-cols-3 sm:grid-rows-[100px_1.1fr_1fr_0.5fr]">
 			<div className="row-span-1 sm:row-span-4">

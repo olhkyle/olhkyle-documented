@@ -11,6 +11,7 @@ import formattedDate from '@/utils/formattedDate';
 import { thumbnails } from '@/constants/thumbnails';
 import { OverviewDetail, TechStackDetail, TrelloDemoGifDetail } from '@/components/ProjectContent';
 import MainFeatureDetail from '@/components/ProjectContent/MainFeatureDetail';
+import { ProjectWithThumbnail } from '@/data/projects';
 
 interface ProjectProps {
 	params: { id: string };
@@ -23,7 +24,7 @@ export default function Project({ params: { id } }: ProjectProps) {
 
 	const { links, overviewEN, startDate, endDate, techStacks, myTasks, mainFeatures } = projects.find(
 		project => project.title === id.replace(/-/g, ' '),
-	) as Project;
+	) as ProjectWithThumbnail;
 
 	return (
 		<>
@@ -86,7 +87,7 @@ export default function Project({ params: { id } }: ProjectProps) {
 			<OverviewDetail data={myTasks} />
 			{id === 'Vanilla-Trello' && <TrelloDemoGifDetail />}
 
-			<Spacer width={40} />
+			<Spacer direction="vertical" size={20} />
 		</>
 	);
 }

@@ -1,15 +1,13 @@
 import React from 'react';
 
-type ToggleTheme = () => void;
-
-const THEME = 'theme';
+type Theme = 'dark' | 'light';
 
 const useTheme = () => {
 	let initializeTheme;
 
 	if (typeof window !== 'undefined') {
-		initializeTheme = (): string =>
-			localStorage.getItem(THEME) ?? (window.matchMedia('(prefers-color-scheme: dark)') ? 'dark' : 'light');
+		initializeTheme = () =>
+			localStorage.getItem('theme') ?? (window.matchMedia('(prefers-color-scheme: dark)') ? 'dark' : 'light');
 	}
 
 	const [theme, setTheme] = React.useState(initializeTheme);
@@ -17,15 +15,14 @@ const useTheme = () => {
 	React.useEffect(() => {
 		if (document) {
 			document.body.dataset.theme = theme;
-			localStorage.setItem(THEME, theme as string);
+			localStorage.setItem('theme', theme!);
 			document.cookie = `theme=${theme}; path=/;`;
 		}
 	}, [theme]);
 
-	const toggleTheme = () => setTheme(theme => (theme === 'light' ? 'dark' : 'light'));
+	const toggleTheme = () => setTheme((theme): Theme => (theme === 'light' ? 'dark' : 'light'));
 
-	return [theme, toggleTheme];
+	return [theme, toggleTheme] as const;
 };
 
-export type { ToggleTheme };
 export default useTheme;

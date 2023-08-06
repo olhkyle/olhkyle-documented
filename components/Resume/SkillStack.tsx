@@ -1,5 +1,10 @@
 import { HighlightText } from '../common';
 
+interface SkillStack {
+	skill: string[];
+	description: string;
+}
+
 interface SkillStackProps {
 	_skill: SkillStack;
 }

@@ -13,10 +13,7 @@ const useScroll = () => {
 	React.useEffect(() => {
 		window.addEventListener('scroll', handleScroll);
 
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-		// eslint-disable-next-line react-hooks/exhaustive-deps
+		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
 	return yOffset;

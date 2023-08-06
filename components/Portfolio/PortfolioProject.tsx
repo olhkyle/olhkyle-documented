@@ -3,11 +3,13 @@ import Image from 'next/image';
 import { HighlightText } from '../common';
 import { ProjectWithThumbnail } from '@/data/projects';
 
+interface PortfolioProjectProps {
+	project: ProjectWithThumbnail;
+}
+
 export default function PortfolioProject({
 	project: { title, techStacks, overviewEN, thumbnail },
-}: {
-	project: ProjectWithThumbnail;
-}) {
+}: PortfolioProjectProps) {
 	return (
 		<div className="col-span-4 mb-12">
 			<Link href={`/project/${title.replace(/\s/g, '-')}`}>

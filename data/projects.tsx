@@ -13,6 +13,27 @@ import {
 import { StaticImageData } from 'next/image';
 import { thumbnails } from '@/constants/thumbnails';
 
+export interface Project {
+	title: string;
+	subtitle: string;
+	team: boolean;
+	composition: string;
+	startDate: Date;
+	endDate: Date | string;
+	links: Array<{
+		title: string;
+		href: string;
+		icon: React.ReactNode;
+	}>;
+	callout: string;
+	overviewEN: string;
+	overviewKR: string;
+	myTasks: string[];
+	improvement: string[];
+	techStacks: string[];
+	mainFeatures: { title: string; content: string[] }[];
+}
+
 export interface ProjectWithThumbnail extends Project {
 	thumbnail: StaticImageData;
 }

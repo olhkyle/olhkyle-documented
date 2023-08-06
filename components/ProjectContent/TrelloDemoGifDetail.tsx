@@ -8,7 +8,7 @@ import { PiPlusBold } from 'react-icons/pi';
 import { ImageBlock } from '.';
 
 export default function TrelloDemoGifDetail() {
-	const [isActive, setActive] = React.useState(false);
+	const [isActive, setActive] = React.useState<boolean>(false);
 
 	return (
 		<div className="mt-2 py-6 border-t-[1px] border-dark dark:border-white">

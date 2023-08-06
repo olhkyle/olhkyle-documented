@@ -3,7 +3,11 @@
 import React from 'react';
 import { PiPlusBold } from 'react-icons/pi';
 
-export default function OverviewDetail({ data }: { data: string[] }) {
+interface OverviewDetail {
+	data: string[];
+}
+
+export default function OverviewDetail({ data }: OverviewDetail) {
 	const [isActive, setActive] = React.useState(false);
 
 	return (

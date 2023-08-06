@@ -9,6 +9,7 @@ const useScreenHeightResize = () => {
 
 	React.useEffect(() => {
 		setScreenSize();
+
 		window.addEventListener('resize', setScreenSize);
 		return () => window.removeEventListener('resize', setScreenSize);
 	});
