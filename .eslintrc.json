@@ -4,7 +4,8 @@
 		"project": "./tsconfig.json"
 	},
 	"env": {
-		"node": true
+		"browser": true,
+		"es2020": true
 	},
 	"plugins": ["@typescript-eslint"],
 	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"]
