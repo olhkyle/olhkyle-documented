@@ -1,7 +1,7 @@
 interface CalloutProps {
 	margin?: string;
 	content: string;
-	backgroundColor: string;
+	backgroundColor?: string;
 }
 
 export default function Callout({ margin, content, backgroundColor }: CalloutProps) {
