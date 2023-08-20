@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { FiArrowLeft } from 'react-icons/fi';
-import { MainTitle, Spacer } from '@/components';
+import { Callout, MainTitle, Spacer } from '@/components';
 import { projects } from '@/data';
 import formattedDate from '@/utils/formattedDate';
 import { thumbnails } from '@/constants/thumbnails';
@@ -22,7 +22,7 @@ export default function Project({ params: { id } }: ProjectProps) {
 
 	const imageContainerRef = React.useRef<HTMLDivElement | null>(null);
 
-	const { links, overviewEN, startDate, endDate, techStacks, myTasks, mainFeatures } = projects.find(
+	const { links, overviewEN, wip, startDate, endDate, techStacks, myTasks, mainFeatures } = projects.find(
 		project => project.title === id.replace(/-/g, ' '),
 	) as ProjectWithThumbnail;
 
@@ -43,6 +43,7 @@ export default function Project({ params: { id } }: ProjectProps) {
 						formattedDate({ startDate, endDate }).split('-')[1] ?? 'Ongoing'
 					}]`}</div>
 				</div>
+				{wip && <Callout margin="mt-20" content="Work In Progress" backgroundColor="bg-gray-100 dark:bg-gray-800" />}
 				<ul className="flex flex-wrap justify-end mt-40 ml-auto gap-4">
 					{links.map(({ title, href }: { title: string; href: string }) => (
 						<li key={title}>

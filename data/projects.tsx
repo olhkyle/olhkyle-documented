@@ -3,6 +3,7 @@ import { BiMovie } from 'react-icons/bi';
 import {
 	ESC_DEMO,
 	ESC_GITHUB,
+	EXPACE_GITHUB,
 	FINEAPPLE_DEPLOY,
 	FINEAPPLE_GITHUB,
 	FINEAPPLE_RETROSPECT,
@@ -18,6 +19,7 @@ export interface Project {
 	subtitle: string;
 	team: boolean;
 	composition: string;
+	wip: boolean;
 	startDate: Date;
 	endDate: Date | string;
 	links: Array<{
@@ -38,15 +40,69 @@ export interface ProjectWithThumbnail extends Project {
 	thumbnail: StaticImageData;
 }
 
-const [trelloMock, fineappleMock, escMock] = thumbnails;
+const [expaceMock, trelloMock, fineappleMock, escMock] = thumbnails;
 
 const projects: ProjectWithThumbnail[] = [
+	{
+		title: 'ExPace',
+		subtitle: '',
+		team: false,
+		wip: true,
+		startDate: new Date('2023-08-10'),
+		endDate: '',
+		composition: '',
+		thumbnail: expaceMock,
+		links: [
+			{
+				title: 'Github',
+				href: EXPACE_GITHUB,
+				icon: <AiOutlineGithub size="22" />,
+			},
+		],
+		callout: '',
+		overviewEN: 'Space Travel Experience Application with Reservation',
+		overviewKR: '우주 여행 예약 서비스',
+		myTasks: ['Make Space Travel Service Application with React'],
+		improvement: ['Work In Progress'],
+		techStacks: [
+			'React',
+			'TypeScript',
+			'React Query',
+			'Zustand',
+			'Emotion',
+			'Framer-Motion',
+			'Zod',
+			'React-Hook-Form',
+			'Storybook',
+			'Vite',
+			'Jest',
+		],
+		mainFeatures: [
+			{
+				title: '👨‍🚀 Spaceship Reservation Service',
+				content: [],
+			},
+			{
+				title: '🔦 Space Info (e.g. Planet, Star)',
+				content: [],
+			},
+			{
+				title: '💿 SignIn',
+				content: [],
+			},
+			{
+				title: '💻 SignUp',
+				content: [],
+			},
+		],
+	},
 	{
 		title: 'Vanilla Trello',
 		subtitle: '',
 		team: false,
+		wip: false,
 		startDate: new Date('2023-06-20'),
-		endDate: '',
+		endDate: new Date('2023-08-06'),
 		composition: '',
 		thumbnail: trelloMock,
 		links: [
@@ -99,6 +155,7 @@ const projects: ProjectWithThumbnail[] = [
 		title: 'FineApple',
 		subtitle: '',
 		team: true,
+		wip: false,
 		startDate: new Date('2023-04-17'),
 		endDate: new Date('2023-05-23'),
 		composition: '3 FE',
@@ -135,8 +192,8 @@ const projects: ProjectWithThumbnail[] = [
 		techStacks: [
 			'React',
 			'JavaScript',
-			'Recoil',
 			'React Query',
+			'Recoil',
 			'Vite',
 			'Yarn',
 			'Emotion',
@@ -183,6 +240,7 @@ const projects: ProjectWithThumbnail[] = [
 		title: 'ESC',
 		subtitle: '(Easy Sports Club)',
 		team: true,
+		wip: false,
 		startDate: new Date('2022-11-20'),
 		endDate: new Date('2022-12-30'),
 		composition: '2 FE & 3 BE',
