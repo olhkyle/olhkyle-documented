@@ -15,7 +15,7 @@ export default function Project({
 		team,
 		startDate,
 		endDate,
-		composition,
+		teamComposition,
 		links,
 		callout,
 		overviewEN,
@@ -32,9 +32,9 @@ export default function Project({
 				<div className="flex gap-2 mt-4 sm:flex-col md:flex-row sm:gap-0">
 					<p className="responsive-text-gray">
 						{team ? 'Team Project' : 'Personal Project'}
-						{composition && ` · `}
+						{teamComposition && ` · `}
 					</p>
-					<p className="ml-1 responsive-text-gray"> {composition}</p>
+					<p className="ml-1 responsive-text-gray"> {teamComposition}</p>
 				</div>
 				<p className="mt-1 responsive-text-gray">{formattedDate({ startDate, endDate })}</p>
 				<div className="sm:row-span-1 mt-3">
