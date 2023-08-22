@@ -126,7 +126,10 @@ const projects: ProjectWithThumbnail[] = [
 			`Designed a CBD library based on the implemented diffing algorithm, using Class (ES6+) syntax`,
 			`Implemented various DOM event interactions using event delegation`,
 		],
-		improvement: ['currently refactoring'],
+		improvement: [
+			'Gain a better understanding of this binding and class syntax',
+			'Got a better understanding of the DOM API and valuable experience implementing Web Applications in Vanilla JavaScript',
+		],
 		techStacks: ['HTML', 'SASS', 'JavaScript', 'lodash'],
 		mainFeatures: [
 			{
