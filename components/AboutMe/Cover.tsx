@@ -18,8 +18,8 @@ export default function Cover() {
 					<p className="py-2 px-8">
 						I've always enjoyed and been interested in implementing visual things. While learning and practicing
 						Architecture, I realized the importance of visual organization and functionality, especially with the
-						various tools I use to express Architecture. I became very interested in the software aspect of these tools,
-						especially in UI/UX. I smoothly fell into FrontEnd development that actually implements such a great UI UX
+						various tools I use to express Architecture. It made me very interested in the software aspect of these
+						tools, smoothly falling into FrontEnd development that actually implements such a great UI UX.
 					</p>
 					<p className="py-2 px-8">
 						Currently, I'm working on personal projects and learning Typescript and Algorithms with JavaScript to create
