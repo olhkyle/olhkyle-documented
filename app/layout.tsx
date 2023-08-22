@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<Nav />
 				<main className="mx-auto px-[1rem] h-full sm:w-[640px] md:w-[768px] lg:w-[1024px]">{children}</main>
 				<Footer />
-				<ScrollToTopButton topPosToStopShowing={300} />
+				<ScrollToTopButton topPosToStartShowing={300} />
 			</body>
 		</html>
 	);
