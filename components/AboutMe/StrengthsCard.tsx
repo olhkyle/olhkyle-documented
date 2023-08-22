@@ -1,4 +1,5 @@
 import { CardTitle } from '.';
+import { BsArrowRightCircle } from 'react-icons/bs';
 
 const strengths: string[] = [
 	'I believe in the joy of immersing oneself in something.💡',
@@ -12,8 +13,8 @@ export default function StrengthsCard() {
 			<CardTitle>Strengths</CardTitle>
 			<ul className="flex flex-col gap-2 mt-5 text-base sm:text-lg font-medium break-keep">
 				{strengths.map(content => (
-					<li key={content} className="flex gap-2">
-						<span>＞</span>
+					<li key={content} className="flex gap-2 items-center">
+						<BsArrowRightCircle size="21" />
 						<p>{content}</p>
 					</li>
 				))}
