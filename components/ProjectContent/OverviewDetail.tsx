@@ -8,7 +8,7 @@ interface OverviewDetail {
 }
 
 export default function OverviewDetail({ data }: OverviewDetail) {
-	const [isActive, setActive] = React.useState(false);
+	const [isActive, setActive] = React.useState<boolean>(false);
 
 	return (
 		<div className="mt-2 py-6 border-t-[1px] border-dark dark:border-white">
@@ -21,7 +21,7 @@ export default function OverviewDetail({ data }: OverviewDetail) {
 
 			<ul className={`gap-2 ${isActive ? 'flex' : 'hidden'} flex-col mt-8 pl-4 sm:pl-10 list-disc`}>
 				{data.map(value => (
-					<li key={value} className="pr-5 py-1 ">
+					<li key={value} className="pr-5 py-1">
 						{value}
 					</li>
 				))}

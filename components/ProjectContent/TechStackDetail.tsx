@@ -8,7 +8,7 @@ interface TechStackDetailProps {
 }
 
 export default function TechStackDetail({ data }: TechStackDetailProps) {
-	const [isActive, setActive] = React.useState(false);
+	const [isActive, setActive] = React.useState<boolean>(false);
 
 	return (
 		<div className="mt-2 py-6 border-t-[1px] border-dark dark:border-white">

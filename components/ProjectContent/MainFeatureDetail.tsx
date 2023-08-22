@@ -8,7 +8,7 @@ interface MainFeatureDetail {
 }
 
 export default function MainFeatureDetail({ data }: MainFeatureDetail) {
-	const [isActive, setActive] = React.useState(false);
+	const [isActive, setActive] = React.useState<boolean>(false);
 
 	return (
 		<div className="mt-2 py-6 border-t-[1px] border-dark dark:border-white">
