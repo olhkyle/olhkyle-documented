@@ -22,7 +22,7 @@ export default function TrelloDemoGifDetail() {
 				{isActive && (
 					<>
 						<ImageBlock src={gif3} blockClassName={'sm:row-span-3 sm:col-span-2'} />
-						<ImageBlock src={gif1} blockClassName={'sm:col-span-2'} />
+						<ImageBlock src={gif1} blockClassName={'sm:col-span-1'} />
 						<ImageBlock src={gif2} blockClassName={'sm:col-span-1'} />
 					</>
 				)}

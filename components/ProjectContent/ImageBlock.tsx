@@ -13,8 +13,8 @@ export default function ImageBlock({ src, blockClassName }: ImageBlockProps) {
 					alt={'gif3'}
 					src={src}
 					sizes="(min-width: 808px) 50vw, 100vw"
-					placeholder="blur"
-					className={`rounded-xl object-contain`}
+					priority
+					className={`rounded-lg object-contain`}
 				/>
 			</div>
 		</>
