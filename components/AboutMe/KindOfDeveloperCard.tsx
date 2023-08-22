@@ -1,6 +1,11 @@
 import { CardTitle, KindOfDeveloperItem } from '.';
 
-const kindOfDeveloper: { title: string; content: string[] }[] = [
+interface KindOfDeveloper {
+	title: string;
+	content: string[];
+}
+
+const kindOfDeveloper: KindOfDeveloper[] = [
 	{
 		title: 'A developer who maintains the fundamentals',
 		content: [
