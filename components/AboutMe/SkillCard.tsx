@@ -1,5 +1,3 @@
-'use client';
-
 import { CardTitle } from '.';
 import { HighlightText } from '../common';
 

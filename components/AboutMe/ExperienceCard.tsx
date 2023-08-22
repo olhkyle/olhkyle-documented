@@ -1,5 +1,3 @@
-'use client';
-
 import { CardTitle } from '.';
 import { CLASS101, DESIGNTHOU } from '../../constants/url';
 
