@@ -1,4 +1,5 @@
 import { Education } from './education';
+import { v4 as uuid4 } from 'uuid';
 
 export interface DevExperience extends Education {
 	links: string[];
@@ -6,7 +7,7 @@ export interface DevExperience extends Education {
 
 const devExperience: DevExperience[] = [
 	{
-		id: '1',
+		id: uuid4(),
 		title: 'Zerobase FrontEnd Offline BootCamp ∙ Seoul, Korea',
 		links: [],
 		subTitle: '',

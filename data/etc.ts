@@ -1,4 +1,5 @@
 import { AAVS, CLASS101, DESIGNTHOU } from '../constants/url';
+import { v4 as uuid4 } from 'uuid';
 
 export interface Etc {
 	id: string;
@@ -12,7 +13,7 @@ export interface Etc {
 
 const etc: Etc[] = [
 	{
-		id: '1',
+		id: uuid4(),
 		title: 'Architectural Intern',
 		department: 'Gansam Architect & Partners',
 		description: 'Created CG works and participated in Design Development process with 2 projects',
@@ -21,7 +22,7 @@ const etc: Etc[] = [
 		link: '',
 	},
 	{
-		id: '2',
+		id: uuid4(),
 		title: 'Architecture Content Platform Operation',
 		department: 'DesignThou',
 		description:
@@ -31,7 +32,7 @@ const etc: Etc[] = [
 		link: DESIGNTHOU,
 	},
 	{
-		id: '3',
+		id: uuid4(),
 		title: 'Production of Architecture Online Course',
 		department: 'HYK Studio ∙ CLASS 101',
 		description:
@@ -41,7 +42,7 @@ const etc: Etc[] = [
 		link: CLASS101,
 	},
 	{
-		id: '4',
+		id: uuid4(),
 		title: 'Interior Design Certificate',
 		department: 'HRDK (Human Resources Development Service of Korea)',
 		description: '',
@@ -50,7 +51,7 @@ const etc: Etc[] = [
 		link: '',
 	},
 	{
-		id: '5',
+		id: uuid4(),
 		title: 'AAVS Social Algorithm',
 		department: 'Architectural Association, London & Seoul',
 		description:
