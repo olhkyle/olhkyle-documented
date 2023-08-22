@@ -1,3 +1,4 @@
+import React from 'react';
 import {
 	ContactCard,
 	DevExperience,
@@ -11,7 +12,6 @@ import {
 	SubTitle,
 } from '@/components';
 import { devExperience, education, etc, projects, skills } from '@/data';
-import React from 'react';
 
 export default function Resume() {
 	return (
