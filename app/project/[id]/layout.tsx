@@ -79,6 +79,7 @@ export default function Project({ params: { id } }: ProjectProps) {
 					src={thumbnails.find(thumb => thumb.src.includes(id.toLowerCase()))!}
 					alt="trello-mock"
 					sizes="100vw"
+					placeholder="blur"
 					className="rounded-2xl w-full h-auto border-[1px]"
 				/>
 			</div>
