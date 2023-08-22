@@ -13,26 +13,27 @@ import {
 
 import { StaticImageData } from 'next/image';
 import { thumbnails } from '@/constants/thumbnails';
+import { TechStack } from './skills';
 
 export interface Project {
 	title: string;
 	subtitle: string;
 	team: boolean;
-	composition: string;
+	teamComposition: string;
 	wip: boolean;
 	startDate: Date;
 	endDate: Date | string;
 	links: Array<{
 		title: string;
 		href: string;
-		icon: React.ReactNode;
+		icon: React.ReactElement;
 	}>;
 	callout: string;
 	overviewEN: string;
 	overviewKR: string;
 	myTasks: string[];
 	improvement: string[];
-	techStacks: string[];
+	techStacks: TechStack[];
 	mainFeatures: { title: string; content: string[] }[];
 }
 
@@ -50,7 +51,7 @@ const projects: ProjectWithThumbnail[] = [
 		wip: true,
 		startDate: new Date('2023-08-10'),
 		endDate: '',
-		composition: '',
+		teamComposition: '',
 		thumbnail: expaceMock,
 		links: [
 			{
@@ -103,7 +104,7 @@ const projects: ProjectWithThumbnail[] = [
 		wip: false,
 		startDate: new Date('2023-06-20'),
 		endDate: new Date('2023-08-06'),
-		composition: '',
+		teamComposition: '',
 		thumbnail: trelloMock,
 		links: [
 			{
@@ -130,7 +131,7 @@ const projects: ProjectWithThumbnail[] = [
 			'Gain a better understanding of this binding and class syntax',
 			'Got a better understanding of the DOM API and valuable experience implementing Web Applications in Vanilla JavaScript',
 		],
-		techStacks: ['HTML', 'SASS', 'JavaScript', 'lodash'],
+		techStacks: ['HTML', 'CSS(Sass)', 'JavaScript', 'Lodash'],
 		mainFeatures: [
 			{
 				title: 'List',
@@ -161,7 +162,7 @@ const projects: ProjectWithThumbnail[] = [
 		wip: false,
 		startDate: new Date('2023-04-17'),
 		endDate: new Date('2023-05-23'),
-		composition: '3 FE',
+		teamComposition: '3 FE',
 		thumbnail: fineappleMock,
 		links: [
 			{ title: 'Github', href: FINEAPPLE_GITHUB, icon: <AiOutlineGithub size="22" /> },
@@ -246,7 +247,7 @@ const projects: ProjectWithThumbnail[] = [
 		wip: false,
 		startDate: new Date('2022-11-20'),
 		endDate: new Date('2022-12-30'),
-		composition: '2 FE & 3 BE',
+		teamComposition: '2 FE & 3 BE',
 		thumbnail: escMock,
 		links: [
 			{

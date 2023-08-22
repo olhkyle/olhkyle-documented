@@ -1,13 +1,14 @@
+import { TechStack } from '@/data/skills';
 import { CardTitle } from '.';
 import { HighlightText } from '../common';
 
 interface Skill {
 	category: string;
-	techStacks: string[];
+	techStacks: TechStack[];
 }
 
 const skills: Skill[] = [
-	{ category: 'html/css', techStacks: ['HTML', 'CSS3', 'SASS', 'Styled-Components', 'Emotion', 'TailwindCSS'] },
+	{ category: 'html/css', techStacks: ['HTML', 'CSS', 'SASS', 'Styled-Components', 'Emotion', 'TailwindCSS'] },
 	{ category: 'js/ts', techStacks: ['JavaScript[ES6+]', 'TypeScript'] },
 	{ category: 'library', techStacks: ['React', 'Recoil', 'Redux Toolkit', 'React Query', 'Mantine'] },
 	{ category: 'server side', techStacks: ['Node.js', 'Express.js'] },
