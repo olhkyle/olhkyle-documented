@@ -13,8 +13,10 @@ export default function StrengthsCard() {
 			<CardTitle>Strengths</CardTitle>
 			<ul className="flex flex-col gap-2 mt-5 text-base sm:text-lg font-medium break-keep">
 				{strengths.map(content => (
-					<li key={content} className="flex gap-2 items-center">
-						<BsArrowRightCircle size="21" />
+					<li key={content} className="flex gap-3 justify-start">
+						<span className="mt-1 w-[21px]">
+							<BsArrowRightCircle size="20" />
+						</span>
 						<p>{content}</p>
 					</li>
 				))}
