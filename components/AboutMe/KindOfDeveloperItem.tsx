@@ -18,7 +18,9 @@ export default function KindOfDeveloperItem({ kind: { title, content } }: KindOf
 				<div className="w-7">
 					<RxTriangleRight
 						size="24"
-						className={`transition-transform ${isActive ? 'rotate-90 text-blue-200' : ' rotate-0 text-black'}`}
+						className={`transition-transform ${
+							isActive ? 'rotate-90 text-blue-200' : ' rotate-0 text-black dark:text-white'
+						}`}
 					/>
 				</div>
 				<span className="hover:text-blue-100">{title}</span>
