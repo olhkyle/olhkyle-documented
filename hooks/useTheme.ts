@@ -7,7 +7,7 @@ const useTheme = () => {
 
 	if (typeof window !== 'undefined') {
 		initializeTheme = () =>
-			localStorage.getItem('theme') ?? (window.matchMedia('(prefers-color-scheme: dark)') ? 'dark' : 'light');
+			localStorage.getItem('theme') ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 	}
 
 	const [theme, setTheme] = React.useState(initializeTheme);
