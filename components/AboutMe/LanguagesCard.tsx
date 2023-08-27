@@ -8,7 +8,7 @@ export default function LanguagesCard() {
 			<CardTitle>Languages</CardTitle>
 			<ul className="flex flex-col gap-2 my-5 break-keep text-lg">
 				{languages.map(language => (
-					<li key={language} className="flex gap-2 text-base sm:text-lg">
+					<li key={language} className="flex gap-2 text-base">
 						{language}
 					</li>
 				))}

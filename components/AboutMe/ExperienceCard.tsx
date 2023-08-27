@@ -78,9 +78,9 @@ export default function ExperienceCard() {
 			<ul className="flex flex-col gap-6 mt-5 break-keep text-lg">
 				{experience.map(({ ENTitle, ENPlace, ENContent, startDate, endDate, link }) => (
 					<li key={ENTitle} className="flex flex-col text-base sm:text-lg">
-						<div className="text-base responsive-text-gray">{formattedDate({ startDate, endDate })}</div>
+						<div className="text-base">{formattedDate({ startDate, endDate })}</div>
 						<div className="flex flex-col">
-							<div className="font-semibold responsive-text-gray">
+							<div className="font-semibold">
 								<span className="text-lg">
 									{ENTitle} {link && '∙'}{' '}
 								</span>

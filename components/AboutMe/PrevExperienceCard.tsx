@@ -12,7 +12,7 @@ export default function PrevExperienceCard() {
 				<HighlightText fontSize="xl">🛰️ In Work Field</HighlightText>
 				<ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5 text-lg font-medium break-keep responsive-text-gray overflow-x-scroll">
 					{workPhotos.map((workPhoto, idx) => (
-						<li>
+						<li key={`work-photo-${idx}`}>
 							<figure className="flex items-center justify-center w-[100%]">
 								<Image
 									src={workPhoto}
@@ -31,11 +31,11 @@ export default function PrevExperienceCard() {
 			</div>
 			<Divider marginTop="mt-16" />
 
-			<div className="mt-20">
+			<div className="mt-16">
 				<HighlightText fontSize="xl">🎨 In Uni</HighlightText>
 				<ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5 text-lg font-medium break-keep responsive-text-gray">
 					{studentPhotos.map((studentPhoto, idx) => (
-						<li>
+						<li key={`student-photo-${idx}`}>
 							<Image
 								src={studentPhoto}
 								alt={'student photo' + idx}
