@@ -22,17 +22,14 @@ export default function ThemeButton({ position }: ThemeButtonProps) {
 
 	if (!mounted) {
 		return (
-			<button
-				className={`${positionClass} p-2 w-[42px] h-[42px] rounded-lg border-[1px] border-gray-200 bg-white dark:bg-dark hover:text-blue-200 z-50`}>
+			<button className={`${positionClass} theme-button`}>
 				<FaCircleNotch size="24" className="animate-spin text-blue-200" />
 			</button>
 		);
 	}
 
 	return (
-		<button
-			className={`${positionClass} p-2 w-[42px] h-[42px] rounded-lg border-[1px] border-gray-200 bg-white dark:bg-dark hover:text-blue-200 z-50`}
-			onClick={toggleTheme}>
+		<button className={`${positionClass} theme-button`} onClick={toggleTheme}>
 			{theme === 'light' ? <FiMoon size="24" /> : <FiSun size="24" />}
 		</button>
 	);
