@@ -4,7 +4,7 @@ import { projects } from '@/data';
 export default function Portfolio() {
 	return (
 		<>
-			<div className="flex justify-between items-center sm:mt-[2rem]">
+			<div className="flex justify-between items-center sm:mt-[3rem]">
 				<MainTitle>Portfolio.</MainTitle>
 				<span className="text-blue-200 font-bold hidden sm:block text-8xl">{projects.length}</span>
 			</div>

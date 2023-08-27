@@ -24,8 +24,8 @@ const experience: Experience[] = [
 		KRPlace: '',
 		ENContent: 'Pair Programming, Team Project',
 		KRContent: '페어 프로그래밍, 팀 프로젝트',
-		startDate: new Date(2023, 1),
-		endDate: new Date(2023, 5),
+		startDate: new Date('2023-01'),
+		endDate: new Date('2023-05'),
 	},
 	{
 		ENTitle: 'Programming Operator',
@@ -35,7 +35,7 @@ const experience: Experience[] = [
 		link: DESIGNTHOU,
 		ENContent: 'Architecture Content Platform Operation',
 		KRContent: '건축 컨텐츠 플랫폼 운영',
-		startDate: new Date(2022, 2),
+		startDate: new Date('2022-02'),
 		endDate: 'Current',
 	},
 	{
@@ -45,7 +45,7 @@ const experience: Experience[] = [
 		KRPlace: '클래스 101',
 		ENContent: 'Architecture All in One Class with Sketchup',
 		KRContent: '[건축 올인원] 휙, 사로잡는 건축 디자인 클래스',
-		startDate: new Date(2021, 6),
+		startDate: new Date('2021-06'),
 		endDate: 'Current',
 		link: CLASS101,
 	},
@@ -56,7 +56,7 @@ const experience: Experience[] = [
 		KRPlace: '실내건축산업기사',
 		ENContent: 'HRDK, Korea',
 		KRContent: '한국산업인력공단, 대한민국',
-		startDate: new Date(2020, 11),
+		startDate: new Date('2020-11'),
 		endDate: '',
 	},
 	{
@@ -66,8 +66,8 @@ const experience: Experience[] = [
 		KRPlace: 'Technische HochSchule Augsburg',
 		ENContent: 'Augsburg, Germany',
 		KRContent: '아우크스부르크, 독일',
-		startDate: new Date(2019, 3),
-		endDate: new Date(2019, 9),
+		startDate: new Date('2019-03'),
+		endDate: new Date('2019-09'),
 	},
 ];
 

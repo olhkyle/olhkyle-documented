@@ -5,4 +5,4 @@ import fineappleMock from '@/public/project/fineapple/fineapple.png';
 
 import { StaticImageData } from 'next/image';
 
-export const thumbnails: StaticImageData[] = [expaceMock, trelloMock, fineappleMock, escMock];
+export const thumbnails: Array<StaticImageData> = [expaceMock, trelloMock, fineappleMock, escMock];

@@ -20,7 +20,7 @@ export default function SideNav({ isActive, toggleActive }: SideNavProps) {
 		<div
 			className={`fixed -right-[280px] top-0 flex flex-col w-[280px] h-full border-l-[1px] border-l-gray-300 dark:border-l-gray-600 bg-white transition-transform ${
 				isActive ? '-translate-x-[280px]' : 'translate-x-0'
-			} duration-500 z-50 dark:bg-dark sm:hidden`}>
+			} duration-500 z-50 dark:bg-dark md:hidden`}>
 			<div className="flex justify-between items-center w-full h-[80px] border-b-[1px] border-b-gray-300 dark:border-b-gray-600">
 				<button className="p-4" onClick={toggleActive}>
 					<FiArrowLeft size="27" />

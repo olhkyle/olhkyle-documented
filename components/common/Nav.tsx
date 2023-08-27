@@ -22,7 +22,7 @@ export default function Nav() {
 						<Link href="/">💿 LHKYLE</Link>
 					</h1>
 
-					<div className="hidden justify-between items-center gap-6 ml-10 px-2 min-w-[440px] sm:flex">
+					<div className="hidden justify-between items-center gap-6 ml-10 px-2 min-w-[440px] md:flex">
 						<ul className="flex gap-2 items-center">
 							{links.slice(0, 3).map((link, idx) => (
 								<li key={idx}>
@@ -32,7 +32,7 @@ export default function Nav() {
 						</ul>
 						<ThemeButton position="nav" />
 					</div>
-					<button className="p-4 sm:hidden" onClick={toggleActive}>
+					<button className="p-4 md:hidden" onClick={toggleActive}>
 						<RxHamburgerMenu size="27" />
 					</button>
 				</div>
@@ -40,7 +40,7 @@ export default function Nav() {
 			<SideNav isActive={isActive} toggleActive={toggleActive} />
 			{isActive && (
 				<div
-					className="fixed top-0 right-0 left-0 bottom-0 backdrop-blur-sm z-10 sm:hidden"
+					className="fixed top-0 right-0 left-0 bottom-0 backdrop-blur-sm z-40 md:hidden"
 					onClick={toggleActive}></div>
 			)}
 		</>

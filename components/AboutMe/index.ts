@@ -6,3 +6,4 @@ export { default as LanguagesCard } from './LanguagesCard';
 export { default as ExperienceCard } from './ExperienceCard';
 export { default as KindOfDeveloperCard } from './KindOfDeveloperCard';
 export { default as KindOfDeveloperItem } from './KindOfDeveloperItem';
+export { default as PrevExperienceCard } from './PrevExperienceCard';

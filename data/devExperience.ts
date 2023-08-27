@@ -17,8 +17,8 @@ const devExperience: DevExperience[] = [
 			`Took 3 rounds of Pair Programming using vanilla JavaScript and React`,
 			`Collaborated with team for final team project (FineApple) using React and a variety of libraries`,
 		],
-		startDate: new Date(2023, 1),
-		endDate: new Date(2023, 5),
+		startDate: new Date('2023-01'),
+		endDate: new Date('2023-05'),
 	},
 ];
 
