@@ -15,6 +15,8 @@
 	--color-black: #191a20;
 	--color-white: #fff;
 
+	--color-highlight-bg: rgba(175, 184, 193, 0.15);
+
 	--color-gray-50: #f7f7f7;
 	--color-gray-100: #f9fafb;
 	--color-gray-200: #e6e9ee;
@@ -31,6 +33,7 @@
 	--color-green-300: #15c47e;
 	--color-green-400: #0e7b6c;
 
+	--color-blue-50: #4389ca;
 	--color-blue-100: #0687f0;
 	--color-blue-200: #2272eb;
 	--color-blue-300: #e8f2ff;
@@ -106,4 +109,8 @@ body[data-theme='light'] {
 
 .hover-ring {
 	@apply hover:ring-2 hover:ring-blue-200 hover:ring-offset-4 ring-offset-white dark:ring-offset-dark transition delay-100 duration-200 ease-in-out;
+}
+
+.theme-button {
+	@apply p-2 w-[42px] h-[42px] rounded-lg border-[1px] border-gray-200 bg-white dark:bg-dark dark:border-gray-600 dark:hover:border-gray-200 z-50;
 }

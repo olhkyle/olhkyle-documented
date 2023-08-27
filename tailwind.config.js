@@ -33,6 +33,7 @@ module.exports = {
 					400: 'var(--color-green-400)',
 				},
 				blue: {
+					50: 'var(--color-blue-50)',
 					100: 'var(--color-blue-100)',
 					200: 'var(--color-blue-200)',
 					300: 'var(--color-blue-300)',
@@ -44,6 +45,7 @@ module.exports = {
 				},
 				red: 'var(--color-red)',
 				dark: 'var(--color-dark)',
+				highlight: 'var(--color-highlight-bg)',
 			},
 			fontFamily: {
 				sans: ['Neogrotesk', 'Spoqa Han Sans Neo', 'sans-serif', ...defaultTheme.fontFamily.sans],
