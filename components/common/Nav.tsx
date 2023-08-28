@@ -21,9 +21,9 @@ export default function Nav() {
 		<>
 			<nav className="sticky top-0 px-[1rem] h-[80px] bg-white/95 dark:bg-dark/95 backdrop-blur sm:bg-white dark:sm:bg-dark sm:backdrop-blur-none z-40">
 				<div className="flex justify-between mx-auto md:w-[768px] lg:w-[1024px] xl:w-[1280px]">
-					<h1 className="flex-center ml-1 min-w-[130px] min-h-[80px] text-center font-semibold text-2xl cursor-pointer">
-						<Link href="/" className="font-bold">
-							💿 LHKYLE
+					<h1 className="flex-center ml-1 min-w-[130px] min-h-[80px] font-black text-2xl text-center cursor-pointer">
+						<Link href="/" className="font-mono underlined">
+							Olhkyle
 						</Link>
 					</h1>
 

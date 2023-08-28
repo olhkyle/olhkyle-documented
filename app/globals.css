@@ -71,6 +71,50 @@ body[data-theme='light'] {
 	display: none; /* Chrome, Safari, Opera*/
 }
 
+.underlined {
+	position: relative;
+	text-decoration: none !important;
+	white-space: nowrap;
+}
+
+.underlined:focus {
+	outline: none;
+	text-decoration: none !important;
+}
+
+.underlined:after {
+	content: '';
+	height: 2px;
+	transform: scaleX(0);
+	transition: transform 0.25s ease;
+	transform-origin: left;
+	left: 0;
+	bottom: -4px;
+	width: 100%;
+	display: block;
+	position: absolute;
+}
+
+.underlined:hover:after,
+.underlined:focus:after,
+.active.underlined:after {
+	background-color: currentColor;
+	transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion) {
+	.underlined:after {
+		opacity: 0;
+		transition: opacity 0.25s ease;
+	}
+
+	.underlined:hover:after,
+	.underlined:focus:after,
+	.active.underlined:after {
+		opacity: 1;
+	}
+}
+
 @layer base {
 	.font-outline-1 {
 		-webkit-text-stroke: 1px black;
