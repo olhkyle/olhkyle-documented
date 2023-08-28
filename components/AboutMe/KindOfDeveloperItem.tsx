@@ -13,9 +13,9 @@ export default function KindOfDeveloperItem({ kind: { title, content } }: KindOf
 	return (
 		<li key={title} className="flex flex-col gap-2 cursor-pointer">
 			<div
-				className="flex items-start sm:items-center gap-1 font-medium text-base text-black dark:text-white sm:text-lg"
+				className="flex items-center sm:items-center gap-1 font-medium text-base text-black dark:text-white sm:text-lg"
 				onClick={() => setActive(!isActive)}>
-				<div className="w-7">
+				<div className="mr-1 w-7">
 					<BsArrowRightCircle
 						size="21"
 						className={`transition-transform ${
@@ -23,10 +23,10 @@ export default function KindOfDeveloperItem({ kind: { title, content } }: KindOf
 						}`}
 					/>
 				</div>
-				<span className={`hover:text-blue-100 ${isActive && 'text-blue-100'}`}>{title}</span>
+				<span className={`text-[15px] sm:text-base hover:text-blue-100 ${isActive && 'text-blue-100'}`}>{title}</span>
 			</div>
 			{content.map(item => (
-				<p key={item} className={`text-base px-4 ${isActive ? 'block' : 'hidden'}`}>
+				<p key={item} className={`text-[15px] px-4 ${isActive ? 'block' : 'hidden'}`}>
 					{item}
 				</p>
 			))}

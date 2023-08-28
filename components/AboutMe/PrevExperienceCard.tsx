@@ -5,8 +5,8 @@ import { Divider, HighlightText } from '../common';
 
 export default function PrevExperienceCard() {
 	return (
-		<div className="mt-8 p-4 px-6 pb-8 rounded-[2rem] bg-gray-50 dark:bg-gray-900 sm:bg-none">
-			<CardTitle>What I did as Architect / Space Designer</CardTitle>
+		<div className="mt-8 p-4 px-5 pb-8 rounded-[2rem] bg-gray-50 dark:bg-gray-900 sm:bg-none">
+			<CardTitle>What I did before</CardTitle>
 
 			<div className="mt-10">
 				<HighlightText fontSize="xl" fontWeight="semibold">

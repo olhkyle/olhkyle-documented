@@ -18,14 +18,14 @@ export default function Cover() {
 
 			<div className="font-medium break-keep text-base responsive-text-gray sm:text-lg">
 				<div>
-					<p className="py-2 px-8">I graduated from Kookmin University in 2023 with studying Architecture. </p>
-					<p className="py-2 px-8">
+					<p className="py-2 px-5">I graduated from Kookmin University in 2023 with studying Architecture. </p>
+					<p className="py-2 px-5">
 						I&apos;ve always enjoyed and been interested in implementing visual things. While learning and practicing
 						Architecture, I realized the importance of visual organization and functionality, especially with the
 						various tools I use to express Architecture. It made me very interested in the software aspect of these
 						tools, smoothly falling into FrontEnd development that actually implements such a great UI UX.
 					</p>
-					<p className="py-2 px-8">
+					<p className="py-2 px-5">
 						Currently, I&apos;m working on personal projects and learning Typescript and Algorithms with JavaScript to
 						create habits and environments for steady growth. I&apos;m also trying to keep track of my projects and
 						learnings to use them as growth indicators and to look back on them later and fill my shortage.

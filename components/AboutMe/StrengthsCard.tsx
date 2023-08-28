@@ -9,7 +9,7 @@ const strengths: string[] = [
 
 export default function StrengthsCard() {
 	return (
-		<div className="mt-16 p-4 px-6 pb-8 rounded-[2rem] bg-gray-50 dark:bg-gray-900 sm:bg-none">
+		<div className="mt-16 p-4 px-5 pb-8 rounded-[2rem] bg-gray-50 dark:bg-gray-900 sm:bg-none">
 			<CardTitle>Strengths</CardTitle>
 			<ul className="flex flex-col gap-2 mt-5 text-base sm:text-lg font-medium break-keep">
 				{strengths.map(content => (
@@ -17,7 +17,7 @@ export default function StrengthsCard() {
 						<span className="mt-1 w-[21px]">
 							<BiCaretRight size="21" />
 						</span>
-						<p>{content}</p>
+						<p className="text-[15px] sm:text-base">{content}</p>
 					</li>
 				))}
 			</ul>
