@@ -21,7 +21,7 @@ export default function PrevExperienceCard() {
 									alt={'work photo' + idx}
 									width={500}
 									height={500}
-									sizes="500px"
+									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 									placeholder="blur"
 									blurDataURL={BLUR_DATA_URL}
 									quality={75}

@@ -10,7 +10,7 @@ export default function Home() {
 				src={'/home/cohousing-front.jpg'}
 				alt="cohousing-front"
 				className="mt-12 mx-5 w-4/5 sm:w-5/6 lg:w-4/6 h-auto rounded-lg object-contain object-center border-[1px] border-gray-200"
-				sizes={'1000px'}
+				sizes="(min-width: 768px) 50vw, 100vw"
 				width={500}
 				height={300}
 				quality={75}
