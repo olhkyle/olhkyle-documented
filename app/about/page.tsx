@@ -16,7 +16,7 @@ export default function AboutMe() {
 		<>
 			<div className="flex justify-between gap-4 w-full sm:mt-[3rem]">
 				<MainTitle>About Me.</MainTitle>
-				<div className="hidden justify-center items-center w-48 h-48 border-[1px]  border-gray-200 dark:border-gray-900 rounded-full overflow-hidden md:flex">
+				<div className="hidden justify-center items-center w-48 h-48 border-[1px] border-gray-200 dark:border-gray-900 rounded-full overflow-hidden md:flex">
 					<Image
 						src={'/about/profile-sculpture.png'}
 						alt="sculpture"
