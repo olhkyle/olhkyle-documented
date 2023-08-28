@@ -21,7 +21,7 @@ export default function ThemeButton({ position }: ThemeButtonProps) {
 	}, []);
 
 	return (
-		<button className={`${positionClass} theme-button`} onClick={toggleTheme}>
+		<button className={`${positionClass} theme-button`} onClick={toggleTheme} aria-label="theme-btn">
 			{mounted ? (
 				<>{theme === 'light' ? <FiMoon size="24" /> : <FiSun size="24" />}</>
 			) : (

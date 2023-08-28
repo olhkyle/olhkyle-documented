@@ -6,7 +6,7 @@ import { AiOutlineGithub, AiOutlineLink } from 'react-icons/ai';
 import { FiLinkedin } from 'react-icons/fi';
 import { useRouter } from 'next/navigation';
 
-interface SocialLink {
+export interface SocialLink {
 	name: string;
 	href: string;
 	icon: React.ReactElement;
@@ -37,7 +37,9 @@ export default function Footer() {
 				<ul className="flex items-center gap-3">
 					{socialLinks.map(({ name, href, icon }) => (
 						<li key={name}>
-							<SocialBadge linkHref={href}>{icon}</SocialBadge>
+							<SocialBadge linkHref={href} name={name}>
+								{icon}
+							</SocialBadge>
 						</li>
 					))}
 				</ul>

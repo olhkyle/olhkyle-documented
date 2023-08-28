@@ -17,7 +17,7 @@ export default function RedirectButton({ path, children }: RedirectButtonProps) 
 			className={`flex-center px-2 w-48 h-14 text-lg toggle-dark font-bold border-[2px] border-black cursor-pointer hover:text-black hover:bg-white hover:border-[2px] hover:border-black dark:hover:bg-black dark:hover:border-white dark:hover:text-white`}
 			onClick={() => (path === 'blog' ? router.push(BLOG) : router.push(`/${path}`))}>
 			{children}
-			<IoMdArrowForward size="24" className="mr-2 hover:transition-transform translate-x-4" />
+			<IoMdArrowForward size="21" className="mr-2 hover:transition-transform translate-x-4" />
 		</button>
 	);
 }
