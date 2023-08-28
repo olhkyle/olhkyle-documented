@@ -17,10 +17,10 @@ export default function PortfolioProject({
 					<Image
 						src={thumbnail}
 						alt={title}
-						sizes="2000px"
+						className="w-full h-auto rounded-2xl object-contain object-center border-2 "
+						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 						placeholder="blur"
 						priority
-						className="w-full h-auto rounded-2xl object-contain object-center border-2 "
 					/>
 				</figure>
 				<div className="flex flex-col gap-4 mt-6">

@@ -20,7 +20,14 @@ export default function Overview() {
 				</ul>
 			</div>
 			<div className="hidden justify-center items-center mr-2 w-64 border-[1px] border-dark object-cover overflow-hidden rounded-full sm:flex">
-				<Image src={mee} alt="me" sizes="100vw" priority placeholder="blur" className="block w-full h-full" />
+				<Image
+					src={mee}
+					alt="me"
+					className="block w-full h-full"
+					sizes="(min-width: 768px) 50vw, 100vw"
+					priority
+					placeholder="blur"
+				/>
 			</div>
 		</div>
 	);

@@ -61,9 +61,9 @@ export default function Project() {
 				<Image
 					src={thumbnails.find(thumb => thumb.src.includes(params.id.toString().toLowerCase()))!}
 					alt="trello-mock"
-					sizes="100vw"
-					placeholder="blur"
 					className="rounded-2xl w-full h-auto border-[1px]"
+					sizes="(min-width: 768px) 50vw, 100vw"
+					placeholder="blur"
 				/>
 			</div>
 
