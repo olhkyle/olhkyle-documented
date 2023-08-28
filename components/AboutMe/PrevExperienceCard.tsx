@@ -38,12 +38,11 @@ export default function PrevExperienceCard() {
 						<li key={`student-photo-${idx}`}>
 							<Image
 								src={studentPhoto}
-								alt={'student photo' + idx}
+								alt={`student-photo-${idx}`}
 								width={500}
 								height={500}
 								placeholder="blur"
 								blurDataURL={BLUR_DATA_URL}
-								// className="w-[88%]"
 								quality={75}
 							/>
 						</li>
