@@ -1,9 +1,9 @@
 import { CardTitle } from '.';
-import { BsArrowRightCircle } from 'react-icons/bs';
+import { BiCaretRight } from 'react-icons/bi';
 
 const strengths: string[] = [
 	'I believe in the joy of immersing oneself in something.💡',
-	'I like to make something related with visual 🖥️',
+	'I like to make something related to visual 🖥️',
 	`From an Engineering perspective, I keep finding ways on how to enhance UI/UX on products 🚀`,
 ];
 
@@ -15,7 +15,7 @@ export default function StrengthsCard() {
 				{strengths.map(content => (
 					<li key={content} className="flex gap-3 justify-start">
 						<span className="mt-1 w-[21px]">
-							<BsArrowRightCircle size="20" />
+							<BiCaretRight size="21" />
 						</span>
 						<p>{content}</p>
 					</li>

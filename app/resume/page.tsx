@@ -22,11 +22,10 @@ export default function Resume() {
 					<ContactCard />
 					<LinksCard />
 				</div>
-
 				<div className="mt-[6rem] sm:mt-[8rem]">
 					<SubTitle>Projects</SubTitle>
 					<ul>
-						{projects.sort().map(project => (
+						{projects.map(project => (
 							<React.Fragment key={project.title}>
 								<Project project={project} />
 								<Divider />
