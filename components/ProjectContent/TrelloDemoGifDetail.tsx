@@ -1,11 +1,9 @@
 'use client';
 
 import React from 'react';
-import gif1 from '@/public/project/trello/trello-gif-1.gif';
-import gif2 from '@/public/project/trello/trello-gif-2.gif';
-import gif3 from '@/public/project/trello/trello-gif-3.gif';
 import { PiPlusBold } from 'react-icons/pi';
 import { ImageBlock } from '.';
+import { projects } from './projects';
 
 export default function TrelloDemoGifDetail() {
 	const [isActive, setActive] = React.useState<boolean>(false);
@@ -21,9 +19,14 @@ export default function TrelloDemoGifDetail() {
 			<div className={`${isActive ? 'grid' : 'hidden'} grid-rows-3 sm:grid-rows-3 sm:grid-flow-col gap-4 mt-8 p-4`}>
 				{isActive && (
 					<>
-						<ImageBlock src={gif3} blockClassName={'sm:row-span-3 sm:col-span-2'} />
-						<ImageBlock src={gif1} blockClassName={'sm:col-span-1'} />
-						<ImageBlock src={gif2} blockClassName={'sm:col-span-1'} />
+						{projects.map((project, idx) => (
+							<ImageBlock
+								key={idx}
+								src={project}
+								index={idx}
+								blockClassName={idx === projects.length - 1 ? 'sm:row-span-3 sm:col-span-2' : 'sm:col-span-1'}
+							/>
+						))}
 					</>
 				)}
 			</div>
