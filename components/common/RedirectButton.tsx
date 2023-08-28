@@ -2,7 +2,6 @@
 
 import { BLOG } from '@/constants/url';
 import { useRouter } from 'next/navigation';
-
 import { IoMdArrowForward } from 'react-icons/io';
 
 interface RedirectButtonProps {

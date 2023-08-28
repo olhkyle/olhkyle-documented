@@ -1,6 +1,5 @@
 import { CardTitle } from '.';
 import { CLASS101, DESIGNTHOU } from '../../constants/url';
-
 import formattedDate from '../../utils/formattedDate';
 import Link from 'next/link';
 
