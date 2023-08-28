@@ -41,7 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			</head>
 			<body data-theme={cookie && cookie.value} className={schibsted_Grotesk.className}>
 				<Nav />
-				<main className="mx-auto px-[1rem] h-full sm:w-[640px] md:w-[768px] lg:w-[1024px]">{children}</main>
+				<main className="mx-auto px-[2rem] h-full sm:w-[640px] md:w-[768px] lg:w-[1024px]">{children}</main>
 				<Footer />
 				<ScrollToTopButton topPosToStartShowing={300} />
 			</body>

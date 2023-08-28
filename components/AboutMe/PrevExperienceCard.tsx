@@ -19,6 +19,7 @@ export default function PrevExperienceCard() {
 								<Image
 									src={workPhoto}
 									alt={'work photo' + idx}
+									className="rounded-md"
 									width={500}
 									height={500}
 									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -43,8 +44,10 @@ export default function PrevExperienceCard() {
 							<Image
 								src={studentPhoto}
 								alt={`student-photo-${idx}`}
+								className="rounded-md"
 								width={500}
 								height={500}
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 								placeholder="blur"
 								blurDataURL={BLUR_DATA_URL}
 								quality={75}

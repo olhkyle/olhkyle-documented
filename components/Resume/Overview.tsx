@@ -11,7 +11,7 @@ export default function Overview() {
 	return (
 		<div className="flex justify-between items-center">
 			<div>
-				<h2 className="text-[3rem] font-bold break-keep sm:text-[2.5rem] md:text-[64px]">Hyukmin Kwon</h2>
+				<h2 className="text-[2.5rem] font-bold break-keep sm:text-[2.5rem] md:text-[64px]">Hyukmin Kwon</h2>
 				<p className="mt-1 ml-1 text-lg font-medium md:text-xl break-keep">
 					FrontEnd Developer with background of Architecture
 				</p>
