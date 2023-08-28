@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 	title: 'Olhkyle',
 	description: `About kyle`,
 	themeColor: [
-		{ media: '(prefers-color-scheme: light)', color: '#090B16' },
-		{ media: '(prefers-color-scheme: dark)', color: '#fff' },
+		{ media: '(prefers-color-scheme: light)', color: 'var(--color-dark)' },
+		{ media: '(prefers-color-scheme: dark)', color: 'var(--color-white)' },
 	],
 };
 
@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)" />
 				<meta name="theme-color" content="#090b16" media="(prefers-color-scheme: dark)" />
 			</head>
-			<body data-theme={cookie !== undefined && cookie.value}>
+			<body data-theme={cookie && cookie.value}>
 				<Nav />
 				<main className="mx-auto px-[1rem] h-full sm:w-[640px] md:w-[768px] lg:w-[1024px]">{children}</main>
 				<Footer />
