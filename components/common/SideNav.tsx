@@ -25,9 +25,9 @@ export default function SideNav({ isActive, toggleActive }: SideNavProps) {
 				<button className="p-4" onClick={toggleActive}>
 					<FiArrowLeft size="27" />
 				</button>
-				<h1 className="mr-4 text-xl text-center font-semibold cursor-pointer" onClick={toggleActive}>
-					<Link href="/" className="py-1 px-2">
-						💿 LHKYLE
+				<h1 className="mr-4 text-xl text-center font-black cursor-pointer" onClick={toggleActive}>
+					<Link href="/" className="font-mono py-1 px-2">
+						Olhkyle
 					</Link>
 				</h1>
 				<ThemeButton position="sideNav" />
