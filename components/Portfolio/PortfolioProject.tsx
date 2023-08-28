@@ -23,16 +23,16 @@ export default function PortfolioProject({
 						priority
 					/>
 				</figure>
-				<div className="flex flex-col gap-4 mt-6">
+				<div className="flex flex-col gap-3 mt-4">
 					<ul className="flex flex-wrap gap-2">
 						{techStacks.slice(0, 3).map(stack => (
 							<li key={stack}>
-								<HighlightText>{stack}</HighlightText>
+								<HighlightText fontWeight="medium">{stack}</HighlightText>
 							</li>
 						))}
 					</ul>
-					<h2 className="text-2xl font-semibold sm:text-3xl">{title}</h2>
-					<p> {overviewEN}</p>
+					<h2 className="text-2xl font-bold sm:text-3xl">{title}</h2>
+					<p className="tracking-normal text-base">{overviewEN}</p>
 				</div>
 			</Link>
 		</div>

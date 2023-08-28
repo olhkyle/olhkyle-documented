@@ -36,7 +36,7 @@ export default function KindOfDeveloperCard() {
 	return (
 		<div className="mt-8 p-4 px-6 pb-8 rounded-[2rem] bg-gray-50 dark:bg-gray-900 sm:bg-none">
 			<CardTitle>What kind of Developer</CardTitle>
-			<ul className="flex flex-col gap-4 mt-5 text-lg font-medium break-keep responsive-text-gray">
+			<ul className="flex flex-col gap-4 mt-5 font-medium break-keep responsive-text-gray">
 				{kindOfDeveloper.map(kind => (
 					<KindOfDeveloperItem key={kind.title} kind={kind} />
 				))}

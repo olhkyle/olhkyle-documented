@@ -17,9 +17,9 @@ export default function KindOfDeveloperItem({ kind: { title, content } }: KindOf
 				onClick={() => setActive(!isActive)}>
 				<div className="w-7">
 					<BsArrowRightCircle
-						size="24"
+						size="21"
 						className={`transition-transform ${
-							isActive ? 'rotate-90 text-blue-200' : ' rotate-0 text-black dark:text-white'
+							isActive ? 'rotate-90 text-blue-200' : 'rotate-0 text-black dark:text-white'
 						}`}
 					/>
 				</div>

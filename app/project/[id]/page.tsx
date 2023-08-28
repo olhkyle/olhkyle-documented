@@ -34,7 +34,7 @@ export default function Project() {
 						<Link
 							href={href}
 							target="_blank"
-							className="underline underline-offset-2 hover:text-blue-200 text-sm sm:text-lg">
+							className="font-medium underline underline-offset-2 hover:text-blue-200 text-sm sm:text-lg">
 							{title.toUpperCase()}
 						</Link>
 					</li>

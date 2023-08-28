@@ -3,5 +3,5 @@ interface ProjectTitleProps {
 }
 
 export default function ProjectTitle({ children }: ProjectTitleProps) {
-	return <h2 className="mt-2 text-3xl font-semibold">{children}</h2>;
+	return <h2 className="mt-2 text-3xl font-bold">{children}</h2>;
 }

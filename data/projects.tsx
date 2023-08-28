@@ -119,7 +119,7 @@ const projects: ProjectWithThumbnail[] = [
 			},
 		],
 		callout: '',
-		overviewEN: 'Trello Clone project using Vanilla JavaScript only',
+		overviewEN: 'Trello Clone Project using Vanilla JavaScript only',
 		overviewKR: '바닐라 자바스크립트로만 구현한 Trello',
 		myTasks: [
 			'Implemented SPA (Single Page Application) using Vanilla JavaScript without any libraries or frameworks',

@@ -6,13 +6,17 @@ export default function Cover() {
 			<div className="mt-12 mb-10 p-10 break-keep text-2xl sm:mt-20 lg:text-4xl border-[1px] border-gray-900 rounded-[2rem]">
 				<p className="flex flex-col gap-4 text-2xl md:text-4xl">
 					<span className="font-bold">
-						Hello! I&apos;m <HighlightText fontSize="[36px]">Kyle</HighlightText> 🖐🏻
+						Hello! I&apos;m{' '}
+						<HighlightText fontSize="[36px]" fontWeight="bold">
+							Kyle
+						</HighlightText>{' '}
+						🖐🏻
 					</span>
 					<span className="font-bold">Web Front-End Developer based in Seoul, Korea.</span>
 				</p>
 			</div>
 
-			<div className="break-keep text-base leading-7 responsive-text-gray sm:text-lg">
+			<div className="font-medium break-keep text-base responsive-text-gray sm:text-lg">
 				<div>
 					<p className="py-2 px-8">I graduated from Kookmin University in 2023 with studying Architecture. </p>
 					<p className="py-2 px-8">

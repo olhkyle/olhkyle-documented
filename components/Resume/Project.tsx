@@ -28,18 +28,18 @@ export default function Project({
 		<li className="grid grid-cols-1 sm:grid-flow-col gap-4 mt-[2.5rem] sm:grid-cols-3 sm:grid-rows-[100px_1.1fr_1fr_0.5fr]">
 			<div className="row-span-1 sm:row-span-4">
 				<ProjectTitle>{title}</ProjectTitle>
-				<h3 className="text-lg text-semibold">{subtitle}</h3>
-				<div className="flex gap-2 mt-4 sm:flex-col md:flex-row sm:gap-0">
+				<h3 className="text-lg font-semibold">{subtitle}</h3>
+				<div className="flex gap-2 mt-4 font-medium sm:flex-col md:flex-row sm:gap-0">
 					<p className="responsive-text-gray">
 						{team ? 'Team Project' : 'Personal Project'}
 						{teamComposition && ` · `}
 					</p>
 					<p className="ml-1 responsive-text-gray"> {teamComposition}</p>
 				</div>
-				<p className="mt-1 responsive-text-gray">{formattedDate({ startDate, endDate })}</p>
+				<p className="mt-1 font-medium responsive-text-gray">{formattedDate({ startDate, endDate })}</p>
 				<div className="sm:row-span-1 mt-3">
 					<ThirdSubTitle>Links</ThirdSubTitle>
-					<ul className="flex flex-row flex-wrap gap-2 sm:flex-col">
+					<ul className="flex flex-row flex-wrap gap-2 font-medium sm:flex-col">
 						{links.map(({ title, href, icon }) => (
 							<li key={title} className="inline-flex items-center gap-1">
 								{icon}
@@ -81,7 +81,9 @@ export default function Project({
 				<DoubleSubTitle>Tech Stacks</DoubleSubTitle>
 				<div className="flex flex-wrap gap-2">
 					{techStacks.map(stack => (
-						<HighlightText key={stack}>{stack}</HighlightText>
+						<HighlightText key={stack} fontWeight="medium">
+							{stack}
+						</HighlightText>
 					))}
 				</div>
 			</div>

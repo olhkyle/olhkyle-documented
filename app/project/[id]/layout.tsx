@@ -19,7 +19,7 @@ export default function Project({ params: { id }, children }: ProjectProps) {
 				<div className="flex justify-between items-center">
 					<button
 						type="button"
-						className="inline-flex justify-center items-center mt-2 mr-3 w-8 h-8 rounded-full border-[1px] border-black dark:border-white sm:hidden"
+						className="inline-flex justify-center items-center mt-2 mr-3 w-8 h-8 rounded-full border-[1px] border-black dark:border-gray-600 dark:hover:border-gray-200 sm:hidden"
 						onClick={() => router.back()}>
 						<FiArrowLeft size="24" />
 					</button>

@@ -21,7 +21,7 @@ export default function TechStackDetail({ data }: TechStackDetailProps) {
 
 			<ul className={`gap-4 ${isActive ? 'flex' : 'hidden'} flex-wrap mt-8 pl-4 sm:pl-8`}>
 				{data.map(value => (
-					<li key={value} className="px-5 py-1 border-[1px] border-dark dark:border-white rounded-full">
+					<li key={value} className="px-5 py-1 font-medium border-[1px] border-dark dark:border-white rounded-full">
 						{value}
 					</li>
 				))}

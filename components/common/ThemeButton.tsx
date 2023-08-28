@@ -20,17 +20,13 @@ export default function ThemeButton({ position }: ThemeButtonProps) {
 		setMounted(true);
 	}, []);
 
-	if (!mounted) {
-		return (
-			<button className={`${positionClass} theme-button`}>
-				<FaCircleNotch size="24" className="animate-spin text-blue-200" />
-			</button>
-		);
-	}
-
 	return (
 		<button className={`${positionClass} theme-button`} onClick={toggleTheme}>
-			{theme === 'light' ? <FiMoon size="24" /> : <FiSun size="24" />}
+			{mounted ? (
+				<>{theme === 'light' ? <FiMoon size="24" /> : <FiSun size="24" />}</>
+			) : (
+				<FaCircleNotch size="24" className="animate-spin text-blue-200" />
+			)}
 		</button>
 	);
 }

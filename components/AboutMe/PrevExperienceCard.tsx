@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import CardTitle from './CardTitle';
+import { CardTitle } from '.';
 import { studentPhotos, workPhotos, BLUR_DATA_URL } from './photos';
 import { Divider, HighlightText } from '../common';
 
@@ -9,7 +9,9 @@ export default function PrevExperienceCard() {
 			<CardTitle>What I did as Architect / Space Designer</CardTitle>
 
 			<div className="mt-10">
-				<HighlightText fontSize="xl">🛰️ In Work Field</HighlightText>
+				<HighlightText fontSize="xl" fontWeight="semibold">
+					🛰️ In Work Field
+				</HighlightText>
 				<ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5 text-lg font-medium break-keep responsive-text-gray overflow-x-scroll">
 					{workPhotos.map((workPhoto, idx) => (
 						<li key={`work-photo-${idx}`}>
@@ -32,7 +34,9 @@ export default function PrevExperienceCard() {
 			<Divider marginTop="mt-16" />
 
 			<div className="mt-16">
-				<HighlightText fontSize="xl">🎨 In Uni</HighlightText>
+				<HighlightText fontSize="xl" fontWeight="semibold">
+					🎨 In Uni
+				</HighlightText>
 				<ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5 text-lg font-medium break-keep responsive-text-gray">
 					{studentPhotos.map((studentPhoto, idx) => (
 						<li key={`student-photo-${idx}`}>

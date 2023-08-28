@@ -10,7 +10,7 @@ export default function DevExperience({
 }: DevExperienceProps) {
 	return (
 		<li className="flex flex-col">
-			<span className="responsive-text-gray">{formattedDate({ startDate, endDate })}</span>
+			<span className="font-medium responsive-text-gray">{formattedDate({ startDate, endDate })}</span>
 			<h4 className="text-lg font-medium sm:text-xl sm:font-semibold">{title}</h4>
 			{subTitle && <p>{subTitle}</p>}
 			<ul>

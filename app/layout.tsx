@@ -3,6 +3,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { Footer, Nav, ScrollToTopButton } from '@/components';
 import { cookies } from 'next/dist/client/components/headers';
+import { Schibsted_Grotesk } from 'next/font/google';
 
 export const metadata: Metadata = {
 	title: 'Olhkyle',
@@ -12,6 +13,13 @@ export const metadata: Metadata = {
 		{ media: '(prefers-color-scheme: dark)', color: 'var(--color-white)' },
 	],
 };
+
+const nunito = Schibsted_Grotesk({
+	weight: ['400', '500', '600', '700', '800', '900'],
+	style: ['normal', 'italic'],
+	subsets: ['latin'],
+	display: 'swap',
+});
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	const cookie = cookies().get('theme');
@@ -31,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)" />
 				<meta name="theme-color" content="#090b16" media="(prefers-color-scheme: dark)" />
 			</head>
-			<body data-theme={cookie && cookie.value}>
+			<body data-theme={cookie && cookie.value} className={nunito.className}>
 				<Nav />
 				<main className="mx-auto px-[1rem] h-full sm:w-[640px] md:w-[768px] lg:w-[1024px]">{children}</main>
 				<Footer />

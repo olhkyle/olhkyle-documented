@@ -25,7 +25,9 @@ export default function SkillCard() {
 					<li key={category} className="flex gap-2">
 						<p className="flex flex-wrap gap-2">
 							{techStacks.map(stack => (
-								<HighlightText key={stack}>{stack}</HighlightText>
+								<HighlightText key={stack} fontWeight="medium">
+									{stack}
+								</HighlightText>
 							))}
 						</p>
 					</li>
