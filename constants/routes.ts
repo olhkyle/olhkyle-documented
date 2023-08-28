@@ -1,3 +1,3 @@
-export const FINEAPPLE = 'fineapple';
-export const ESC = 'esc';
-export const TRELLO = 'vanilla-trello';
+export const FINEAPPLE = 'fineapple' as const;
+export const ESC = 'esc' as const;
+export const TRELLO = 'vanilla-trello' as const;

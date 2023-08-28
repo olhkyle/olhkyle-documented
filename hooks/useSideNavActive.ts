@@ -18,7 +18,7 @@ const useSideNavActive = () => {
 			return !isActive;
 		});
 
-	return [isActive, toggleActive];
+	return [isActive, toggleActive] as const;
 };
 
 export default useSideNavActive;
