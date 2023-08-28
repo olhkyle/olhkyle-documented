@@ -86,7 +86,9 @@ export default function ExperienceCard() {
 								<Link
 									href={link ? link : '#'}
 									target={link ? '_blank' : ''}
-									className={link ? 'cursor-pointer' : 'cursor-default'}>
+									className={link ? 'cursor-pointer' : 'cursor-default'}
+									rel="noopener noreferrer"
+									aria-label={link ? link : 'none'}>
 									<span
 										className={`${
 											link ? 'text-bold underline underline-offset-4 decoration-blue-200 hover:text-blue-200' : ''
