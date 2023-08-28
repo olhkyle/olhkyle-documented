@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 	],
 };
 
-const nunito = Schibsted_Grotesk({
+const schibsted_Grotesk = Schibsted_Grotesk({
 	weight: ['400', '500', '600', '700', '800', '900'],
 	style: ['normal', 'italic'],
 	subsets: ['latin'],
@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)" />
 				<meta name="theme-color" content="#090b16" media="(prefers-color-scheme: dark)" />
 			</head>
-			<body data-theme={cookie && cookie.value} className={nunito.className}>
+			<body data-theme={cookie && cookie.value} className={schibsted_Grotesk.className}>
 				<Nav />
 				<main className="mx-auto px-[1rem] h-full sm:w-[640px] md:w-[768px] lg:w-[1024px]">{children}</main>
 				<Footer />
