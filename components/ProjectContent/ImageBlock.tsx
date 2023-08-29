@@ -14,7 +14,7 @@ export default function ImageBlock({ src, blockClassName, index }: ImageBlockPro
 					alt={`trello-git-${index}`}
 					src={src}
 					className={`rounded-lg object-contain`}
-					sizes="(min-width: 768px) 50vw, 100vw"
+					sizes="(max-width: 1200px) 50vw, 33vw"
 					priority
 				/>
 			</div>

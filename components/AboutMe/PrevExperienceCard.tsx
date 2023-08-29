@@ -22,7 +22,7 @@ export default function PrevExperienceCard() {
 									className="rounded-md"
 									width={500}
 									height={500}
-									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+									sizes="(max-width: 1200px) 50vw, 33vw"
 									placeholder="blur"
 									blurDataURL={BLUR_DATA_URL}
 									quality={75}

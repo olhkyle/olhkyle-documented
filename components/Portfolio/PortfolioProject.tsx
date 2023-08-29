@@ -18,7 +18,7 @@ export default function PortfolioProject({
 						src={thumbnail}
 						alt={title}
 						className="w-full h-auto rounded-2xl object-contain object-center border-2 "
-						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+						sizes="(max-width: 1200px) 50vw, 33vw"
 						placeholder="blur"
 						priority
 					/>

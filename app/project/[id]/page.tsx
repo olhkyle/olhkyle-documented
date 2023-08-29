@@ -60,10 +60,12 @@ export default function Project() {
 			<div className="flex flex-col my-12" ref={imageContainerRef}>
 				<Image
 					src={thumbnails.find(thumb => thumb.src.includes(params.id.toString().toLowerCase()))!}
-					alt="trello-mock"
+					alt={params.id.toString()}
 					className="rounded-2xl w-full h-auto border-[1px]"
-					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+					sizes="(max-width: 1200px) 50vw, 33vw"
 					placeholder="blur"
+					priority
+					quality={100}
 				/>
 			</div>
 

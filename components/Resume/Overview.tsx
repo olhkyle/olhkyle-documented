@@ -26,7 +26,7 @@ export default function Overview() {
 					src={mee}
 					alt="me"
 					className="block w-full h-full"
-					sizes="(min-width: 768px) 50vw, 100vw"
+					sizes="(max-width: 1200px) 50vw, 33vw"
 					priority
 					placeholder="blur"
 				/>
