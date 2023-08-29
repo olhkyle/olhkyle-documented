@@ -62,7 +62,7 @@ export default function Project() {
 					src={thumbnails.find(thumb => thumb.src.includes(params.id.toString().toLowerCase()))!}
 					alt={params.id.toString()}
 					className="rounded-2xl w-full h-auto border-[1px]"
-					sizes="(max-width: 1200px) 50vw, 33vw"
+					sizes="100vw"
 					placeholder="blur"
 					priority
 					quality={100}
