@@ -24,6 +24,8 @@ export type TechStack =
 	| 'RTK Query'
 	| 'React Query'
 	| 'Framer-Motion'
+	| 'd3.js'
+	| 'chart.js'
 	| 'Zod'
 	| 'Yup'
 	| 'React-Hook-Form'

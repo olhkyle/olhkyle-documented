@@ -1,9 +1,9 @@
 import { AiOutlineGithub, AiOutlineLink } from 'react-icons/ai';
 import { BiMovie } from 'react-icons/bi';
 import {
+	DTA_GITHUB,
 	ESC_DEMO,
 	ESC_GITHUB,
-	EXPACE_GITHUB,
 	FINEAPPLE_DEPLOY,
 	FINEAPPLE_GITHUB,
 	FINEAPPLE_RETROSPECT,
@@ -45,55 +45,69 @@ const [expaceMock, trelloMock, fineappleMock, escMock] = thumbnails;
 
 const projects: ProjectWithThumbnail[] = [
 	{
-		title: 'ExPace',
+		title: 'DTA',
 		subtitle: '',
 		team: false,
 		wip: true,
-		startDate: new Date('2023-08-10'),
+		startDate: new Date('2023-09-05'),
 		endDate: '',
 		teamComposition: '',
 		thumbnail: expaceMock,
 		links: [
 			{
 				title: 'Github',
-				href: EXPACE_GITHUB,
+				href: DTA_GITHUB,
 				icon: <AiOutlineGithub size="22" />,
 			},
 		],
 		callout: '',
-		overviewEN: 'Space Travel Experience Application with Reservation',
-		overviewKR: '우주 여행 예약 서비스',
-		myTasks: ['Make Space Travel Service Application with React'],
+		overviewEN: 'Document Construction Business Tax Administration',
+		overviewKR: '건설업 세금 관리 작성 웹앱',
+		myTasks: [
+			`Implemented declarative components for building Concurrent UI Patterns using React Query and Suspense.`,
+			`Developed AutoComplete UI Component based on Worker's name keyword search`,
+			`Designed a Form by appropriately mixing Controlled Components and Uncontrolled Components to efficiently handle user input data`,
+			`Developed logic to efficiently manage Modal components that can be fragmented.`,
+		],
 		improvement: ['Work In Progress'],
 		techStacks: [
 			'React',
 			'TypeScript',
 			'React Query',
-			'Zustand',
-			'Emotion',
-			'Framer-Motion',
+			'Redux Toolkit',
 			'Zod',
 			'React-Hook-Form',
-			'Storybook',
-			'Vite',
+			'Emotion',
+			'Firebase',
 			'Jest',
+			'd3.js',
 		],
 		mainFeatures: [
 			{
-				title: '👨‍🚀 Spaceship Reservation Service',
-				content: [],
+				title: 'Auth',
+				content: [
+					"Configure the system as a company's internal system that only relevant people can use.",
+					'It is a system that contains personal information and cannot be signed up from outside, and only relevant people can log in, and strong rules regarding security are applied.',
+				],
 			},
 			{
-				title: '🔦 Space Info (e.g. Planet, Star)',
-				content: [],
+				title: 'Data Registration',
+				content: [
+					"Describe the personal information, date of work, wages paid, remittance details, work-related contents to be paid to the laborers for each day's work and store them in the DB.",
+				],
 			},
 			{
-				title: '💿 SignIn',
-				content: [],
+				title: 'Visualize Data Table and Graph',
+				content: [
+					'Visualize per month based on data such as how many day laborers worked, how much wages were paid, etc.',
+					'd3.js or chart.js will be utilized.',
+				],
 			},
 			{
-				title: '💻 SignUp',
-				content: [],
+				title: 'Easy Access To Print as Formal Format',
+				content: [
+					'To handle Taxation related tasks, configure the function so that the printout that was previously exported from Excel or Hangul can be printed from the web app. configure the function.',
+				],
 			},
 		],
 	},

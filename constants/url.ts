@@ -15,4 +15,4 @@ export const ESC_GITHUB = 'https://github.com/MinWonHaeSo/ESC_CLIENT';
 export const ESC_DEMO = 'https://www.youtube.com/watch?v=ndIasEiODu4&ab_channel=혁민권';
 export const TRELLO_GITHUB = 'https://github.com/olhkyle/trello';
 export const TRELLO_DEPLOY = 'https://vanilla-trello-lime.vercel.app/';
-export const EXPACE_GITHUB = 'https://github.com/olhkyle/expace-fe';
+export const DTA_GITHUB = 'https://github.com/olhkyle/DTA';
