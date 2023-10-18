@@ -9,6 +9,7 @@ import { ProjectWithThumbnail } from '@/data/projects';
 import { Callout, MainTitle, MainFeatureDetail, OverviewDetail, TechStackDetail } from '@/components';
 import { thumbnails } from '@/constants/thumbnails';
 import formattedDate from '@/utils/formattedDate';
+import { BLUR_DATA_URL } from '@/components/AboutMe/photos';
 
 export default function Project() {
 	const params = useParams();
@@ -64,7 +65,7 @@ export default function Project() {
 					className="rounded-2xl w-full h-auto border-[1px]"
 					sizes="100vw"
 					placeholder="blur"
-					priority
+					blurDataURL={BLUR_DATA_URL}
 					quality={100}
 				/>
 			</div>

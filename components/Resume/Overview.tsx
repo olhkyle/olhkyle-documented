@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import mee from '@/public/resume/mee.png';
+import { BLUR_DATA_URL } from '../AboutMe/photos';
 
 const overview: string[] = [
 	'Striving for steady growth',
@@ -27,8 +28,8 @@ export default function Overview() {
 					alt="me"
 					className="block w-full h-full"
 					sizes="(max-width: 1200px) 50vw, 33vw"
-					priority
 					placeholder="blur"
+					blurDataURL={BLUR_DATA_URL}
 				/>
 			</div>
 		</div>
