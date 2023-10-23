@@ -156,3 +156,11 @@ body[data-theme='light'] {
 .theme-button {
 	@apply p-2 w-[42px] h-[42px] rounded-lg border-[1px] border-gray-200 bg-white dark:bg-dark dark:border-gray-600 dark:hover:border-gray-200 z-50;
 }
+
+.clip-path-button-outer {
+	clip-path: polygon(0 0, 100% 0, 100% 70%, 88% 100%, 0 100%);
+}
+
+.clip-path-button {
+	clip-path: polygon(0 0, 100% 0, 100% 70%, 88.5% 100%, 0 100%);
+}

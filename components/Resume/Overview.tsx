@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import mee from '@/public/resume/mee.png';
+import mee from '@/public/resume/mee.jpg';
 import { BLUR_DATA_URL } from '../AboutMe/photos';
 
 const overview: string[] = [

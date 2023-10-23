@@ -1,6 +1,7 @@
 import { AiOutlineGithub, AiOutlineLink } from 'react-icons/ai';
 import { BiMovie } from 'react-icons/bi';
 import {
+	DTA_DEPLOY,
 	DTA_GITHUB,
 	ESC_DEMO,
 	ESC_GITHUB,
@@ -58,6 +59,11 @@ const projects: ProjectWithThumbnail[] = [
 				title: 'Github',
 				href: DTA_GITHUB,
 				icon: <AiOutlineGithub size="22" />,
+			},
+			{
+				title: 'Deployed Link',
+				href: DTA_DEPLOY,
+				icon: <AiOutlineLink size="22" />,
 			},
 		],
 		callout: '',

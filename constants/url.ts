@@ -16,3 +16,4 @@ export const ESC_DEMO = 'https://www.youtube.com/watch?v=ndIasEiODu4&ab_channel=
 export const TRELLO_GITHUB = 'https://github.com/olhkyle/trello';
 export const TRELLO_DEPLOY = 'https://vanilla-trello-lime.vercel.app/';
 export const DTA_GITHUB = 'https://github.com/olhkyle/DTA';
+export const DTA_DEPLOY = 'https://construction-ttax-d7e7d.web.app/';
