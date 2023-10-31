@@ -29,6 +29,13 @@ export default function Project() {
 				}]`}</div>
 			</div>
 			{wip && <Callout margin="mt-20" content="Work In Progress" backgroundColor="bg-gray-100 dark:bg-gray-800" />}
+			{wip && (
+				<Callout
+					margin="mt-20"
+					content="Test ID : test1234@test.com / PW : test@#$1234"
+					backgroundColor="bg-gray-100 dark:bg-gray-800"
+				/>
+			)}
 			<ul className="flex flex-wrap justify-end mt-40 ml-auto gap-4">
 				{links.map(({ title, href }: { title: string; href: string }) => (
 					<li key={title}>
