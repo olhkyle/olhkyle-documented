@@ -42,7 +42,7 @@ export interface ProjectWithThumbnail extends Project {
 	thumbnail: StaticImageData;
 }
 
-const [expaceMock, trelloMock, fineappleMock, escMock] = thumbnails;
+const [dtaMock, trelloMock, fineappleMock, escMock] = thumbnails;
 
 const projects: ProjectWithThumbnail[] = [
 	{
@@ -53,7 +53,7 @@ const projects: ProjectWithThumbnail[] = [
 		startDate: new Date('2023-09-05'),
 		endDate: '',
 		teamComposition: '',
-		thumbnail: expaceMock,
+		thumbnail: dtaMock,
 		links: [
 			{
 				title: 'Github',
@@ -70,8 +70,8 @@ const projects: ProjectWithThumbnail[] = [
 		overviewEN: 'Document Construction Business Tax Administration',
 		overviewKR: '건설업 세금 관리 작성 웹앱',
 		myTasks: [
-			`Implemented declarative components for building Concurrent UI Patterns using React Query and Suspense.`,
-			`Developed AutoComplete UI Component based on Worker's name keyword search`,
+			`Developed a service for a specific company's Admin system`,
+			`Improved initial loading speed through web performance optimization using the Vite bundler's tree shaking and build manualChunks (rollupOptions)`,
 			`Designed a Form by appropriately mixing Controlled Components and Uncontrolled Components to efficiently handle user input data`,
 			`Developed logic to efficiently manage Modal components that can be fragmented.`,
 		],
