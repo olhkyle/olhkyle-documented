@@ -16,7 +16,7 @@ export default function Cover() {
 				</p>
 			</div>
 
-			<div className="font-medium break-keep text-base responsive-text-gray sm:text-lg">
+			<div className="font-medium break-keep text-base responsive-text-gray">
 				<div>
 					<p className="py-2 px-5">I graduated from Kookmin University in 2023 with studying Architecture. </p>
 					<p className="py-2 px-5">

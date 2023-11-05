@@ -17,3 +17,4 @@ export const TRELLO_GITHUB = 'https://github.com/olhkyle/trello';
 export const TRELLO_DEPLOY = 'https://vanilla-trello-lime.vercel.app/';
 export const DTA_GITHUB = 'https://github.com/olhkyle/DTA';
 export const DTA_DEPLOY = 'https://construction-ttax-d7e7d.web.app/';
+export const PORTFOLIO_NOTION = 'https://smooth-rain-4fc.notion.site/Portfolio-381e3d9d23be46cb94f1ce5787de888a?pvs=4'
