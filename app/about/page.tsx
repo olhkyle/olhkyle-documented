@@ -5,7 +5,6 @@ import {
 	KindOfDeveloperCard,
 	LanguagesCard,
 	MainTitle,
-	PrevExperienceCard,
 	SkillCard,
 	StrengthsCard,
 } from '@/components';
@@ -32,7 +31,6 @@ export default function AboutMe() {
 			<Cover />
 			<Divider />
 			<StrengthsCard />
-			<PrevExperienceCard />
 			<KindOfDeveloperCard />
 			<SkillCard />
 			<LanguagesCard />

@@ -8,17 +8,17 @@ export interface DevExperience extends Education {
 const devExperience: DevExperience[] = [
 	{
 		id: uuid4(),
-		title: 'Zerobase FrontEnd Offline BootCamp ∙ Seoul, Korea',
+		title: '205Company ∙ Seoul, Korea',
 		links: [],
 		subTitle: '',
 		description: [
-			`Read Modern JavaScript Deep Dive (926 pages) in 1 month`,
-			`Studied React using official document website`,
-			`Took 3 rounds of Pair Programming using vanilla JavaScript and React`,
-			`Collaborated with team for final team project (FineApple) using React and a variety of libraries`,
+			`Control whole technical problems of Online Shop as Web Developer`,
+			`Use JQuery and Vanilla JavaScript to control Full-Stack Environment as Web Developer`,
+			`Design OBSCURA Offline Space(Suwon Starfield and Paju Premium Outlet) as Space Designer`,
+			`Manage and sell Fashion Products as Assistant Merchandiser`,
 		],
-		startDate: new Date('2023-01'),
-		endDate: new Date('2023-05'),
+		startDate: new Date('2023-11'),
+		endDate: 'Current',
 	},
 ];
 

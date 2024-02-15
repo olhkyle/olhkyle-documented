@@ -25,6 +25,14 @@ export default function Resume() {
 					<ContactCard />
 					<LinksCard />
 				</div>
+				<div className="mt-[6rem]">
+					<SubTitle>Work Experience</SubTitle>
+					<ul className="flex flex-col gap-10 mt-[2.5rem]">
+						{devExperience.map(experience => (
+							<DevExperience key={experience.title} experience={experience} />
+						))}
+					</ul>
+				</div>
 				<div className="mt-[6rem] sm:mt-[8rem]">
 					<SubTitle>Projects</SubTitle>
 					<ul>
@@ -38,17 +46,9 @@ export default function Resume() {
 				</div>
 				<div className="mt-[6rem]">
 					<SubTitle>Skills</SubTitle>
-					<ul className="flex flex-col gap-6 mt-[2.5rem]">
+					<ul className="flex flex-wrap gap-2 mt-[2.5rem]">
 						{skills.map(skill => (
 							<SkillStack key={skill.description} _skill={skill} />
-						))}
-					</ul>
-				</div>
-				<div className="mt-[6rem]">
-					<SubTitle>Dev Experience</SubTitle>
-					<ul className="flex flex-col gap-10 mt-[2.5rem]">
-						{devExperience.map(experience => (
-							<DevExperience key={experience.title} experience={experience} />
 						))}
 					</ul>
 				</div>
