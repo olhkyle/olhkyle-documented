@@ -26,7 +26,7 @@ export default function Resume() {
 					<LinksCard />
 				</div>
 				<div className="mt-[6rem]">
-					<SubTitle>Work Experience</SubTitle>
+					<SubTitle>Work</SubTitle>
 					<ul className="flex flex-col gap-10 mt-[2.5rem]">
 						{devExperience.map(experience => (
 							<DevExperience key={experience.title} experience={experience} />

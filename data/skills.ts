@@ -67,7 +67,7 @@ const skills: SkillStack[] = [
 		description: 'Semantic Markup for web standards with HTML5, understanding 4 web accessibility principles of WCAG ',
 	},
 	{
-		skill: ['CSS(Sass)', 'Styled-Components', 'Emotion', 'TailwindCSS'],
+		skill: ['CSS(Sass)', 'Emotion', 'TailwindCSS'],
 		description: 'Implement Responsive Design and decent UI components',
 	},
 	{
