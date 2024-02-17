@@ -30,13 +30,13 @@ export default function Project({
 				<ProjectTitle>{title}</ProjectTitle>
 				<h3 className="text-lg font-semibold">{subtitle}</h3>
 				<div className="flex gap-2 mt-4 font-medium sm:flex-col md:flex-row sm:gap-0">
-					<p className="responsive-text-gray">
+					<p className="text-gray-400">
 						{team ? 'Team Project' : 'Personal Project'}
 						{teamComposition && ` · `}
 					</p>
-					<p className="ml-1 responsive-text-gray"> {teamComposition}</p>
+					<p className="ml-1 text-gray-400"> {teamComposition}</p>
 				</div>
-				<p className="mt-1 font-medium responsive-text-gray">{formattedDate({ startDate, endDate })}</p>
+				<p className="mt-1 font-medium text-gray-400">{formattedDate({ startDate, endDate })}</p>
 				<div className="sm:row-span-1 mt-3">
 					<ThirdSubTitle>Links</ThirdSubTitle>
 					<ul className="flex flex-row flex-wrap gap-2 font-medium sm:flex-col">

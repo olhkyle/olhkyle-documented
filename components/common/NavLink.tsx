@@ -9,13 +9,11 @@ interface NavLinkProps {
 
 export default function NavLink({ link, currentPath, onClick }: NavLinkProps) {
 	const isNavLinkCurrentPath: string =
-		currentPath === link.toLowerCase()
-			? 'bg-black text-white dark:bg-white dark:text-black'
-			: 'bg-white text-black dark:bg-dark dark:text-white';
+		currentPath === link.toLowerCase() ? 'bg-white text-black' : 'bg-dark text-gray-400';
 
 	return (
 		<div
-			className={`relative flex items-center px-2 py-1 text-xl font-bold ${isNavLinkCurrentPath} cursor-pointer hover:underline hover:underline-offset-[8px] min-w-[110px] clip-path-outer clip-path-button`}
+			className={`relative flex items-center px-2 py-[2px] text-xl font-bold ${isNavLinkCurrentPath} cursor-pointer hover:underline hover:underline-offset-[8px] min-w-[100px] clip-path-button`}
 			onClick={onClick}>
 			<Link href={link === 'Blog' ? BLOG : `/${link.toLowerCase()}`} className="w-full p-2">
 				{link}

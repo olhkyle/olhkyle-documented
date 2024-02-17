@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { FiArrowLeft } from 'react-icons/fi';
 import { MdArrowRight } from 'react-icons/md';
 import links from '../../constants/links';
-import { NavLink, ThemeButton } from '.';
+import { NavLink } from '.';
 import { GMAIL } from '../../constants/url';
 
 interface SideNavProps {
@@ -18,10 +18,10 @@ export default function SideNav({ isActive, toggleActive }: SideNavProps) {
 
 	return (
 		<div
-			className={`fixed -right-[280px] top-0 flex flex-col w-[280px] h-full border-l-[1px] border-l-gray-300 dark:border-l-gray-600 bg-white transition-transform ${
+			className={`fixed -right-[280px] top-0 flex flex-col w-[280px] h-full border-l-[1px] border-l-gray-600 transition-transform ${
 				isActive ? '-translate-x-[280px]' : 'translate-x-0'
-			} duration-500 z-50 dark:bg-dark md:hidden`}>
-			<div className="flex justify-between items-center w-full h-[80px] border-b-[1px] border-b-gray-300 dark:border-b-gray-600">
+			} duration-500 z-50 bg-dark md:hidden`}>
+			<div className="flex justify-between items-center w-full h-[80px] border-b-[1px] border-b-gray-600">
 				<button className="p-4" onClick={toggleActive}>
 					<FiArrowLeft size="27" />
 				</button>
@@ -30,7 +30,6 @@ export default function SideNav({ isActive, toggleActive }: SideNavProps) {
 						Olhkyle
 					</Link>
 				</h1>
-				<ThemeButton position="sideNav" />
 			</div>
 
 			<div className="flex h-full">

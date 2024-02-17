@@ -1,3 +1,3 @@
-const links = ['About', 'Resume', 'Portfolio', 'Blog'] as const;
+const links = ['Resume', 'Portfolio', 'Blog'] as const;
 
 export default links;

@@ -18,7 +18,7 @@ export default function Resume() {
 		<>
 			<div className="mt-[2rem] sm:mt-[4rem]">
 				<div className="flex flex-end mb-8">
-					<span className="ml-auto italic text-gray-500 text-xs sm:text-sm">Last updated: 2023.11.05 </span>
+					<span className="ml-auto italic text-gray-500 text-xs sm:text-sm">Last updated: 2024.02.15 </span>
 				</div>
 				<Overview />
 				<div className="grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 ">

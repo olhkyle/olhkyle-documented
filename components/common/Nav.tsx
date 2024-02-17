@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import useSideNavActive from '../../hooks/useSideNavActive';
-import { NavLink, ThemeButton } from '.';
+import { NavLink } from '.';
 import links from '../../constants/links';
 import usePreventScroll from '../../hooks/usePreventScroll';
 import dynamic from 'next/dynamic';
@@ -19,7 +19,7 @@ export default function Nav() {
 
 	return (
 		<>
-			<nav className="sticky top-0 px-[1rem] h-[80px] bg-white/95 dark:bg-dark/95 backdrop-blur sm:bg-white dark:sm:bg-dark sm:backdrop-blur-none z-40">
+			<nav className="sticky top-0 px-[1rem] h-[80px] bg-dark/95 backdrop-blur sm:bg-dark sm:backdrop-blur-none z-40">
 				<div className="flex justify-between mx-auto md:w-[768px] lg:w-[1024px] xl:w-[1280px]">
 					<h1 className="flex-center ml-1 min-w-[130px] min-h-[80px] font-black text-2xl text-center cursor-pointer">
 						<Link href="/" className="font-mono underlined">
@@ -35,7 +35,6 @@ export default function Nav() {
 								</li>
 							))}
 						</ul>
-						<ThemeButton position="nav" />
 					</div>
 					<button className="p-4 md:hidden" onClick={toggleActive}>
 						<RxHamburgerMenu size="27" />

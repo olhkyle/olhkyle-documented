@@ -11,20 +11,14 @@ export default function DevExperience({
 }: DevExperienceProps) {
 	return (
 		<li className="flex flex-col">
-			<span className="font-medium responsive-text-gray">{formattedDate({ startDate, endDate })}</span>
+			<span className="font-medium">{formattedDate({ startDate, endDate })}</span>
 			<h4 className="text-lg font-medium sm:text-xl sm:font-semibold">
-				<Link href="https://205company.com" className="hover:underline underline-offset-2">
+				<Link href="https://205company.com" className="font-bold hover:underline underline-offset-2">
 					{title}
 				</Link>
 			</h4>
 			{subTitle && <p>{subTitle}</p>}
-			<ul>
-				{description?.map(desc => (
-					<li key={desc} className="responsive-text-gray">
-						- {desc}
-					</li>
-				))}
-			</ul>
+			<ul>{description?.map(desc => <li key={desc}>- {desc}</li>)}</ul>
 		</li>
 	);
 }

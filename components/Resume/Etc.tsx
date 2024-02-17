@@ -9,7 +9,7 @@ interface EtcProps {
 export default function Etc({ _etc: { title, department, description, startDate, endDate, link } }: EtcProps) {
 	return (
 		<li>
-			<span className="font-medium responsive-text-gray">{formattedDate({ startDate, endDate })}</span>
+			<span className="font-medium">{formattedDate({ startDate, endDate })}</span>
 			<h4 className="text-lg font-medium sm:text-xl sm:font-semibold">{title}</h4>
 			<p className="text-base font-medium">
 				{link === '' ? (
@@ -23,7 +23,7 @@ export default function Etc({ _etc: { title, department, description, startDate,
 					</a>
 				)}
 			</p>
-			<p className="mt-1 responsive-text-gray">
+			<p className="mt-1">
 				{description ? '-' : ''} {description}
 			</p>
 		</li>

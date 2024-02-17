@@ -12,10 +12,10 @@ const devExperience: DevExperience[] = [
 		links: [],
 		subTitle: '',
 		description: [
-			`Control whole technical problems of Online Shop as Web Developer`,
+			`Control whole engineering problems of Online Shop(OBSCURA, YOUTH) as Web Developer`,
 			`Use JQuery and Vanilla JavaScript to control Full-Stack Environment as Web Developer`,
 			`Design OBSCURA Offline Space(Suwon Starfield and Paju Premium Outlet) as Space Designer`,
-			`Manage and sell Fashion Products as Assistant Merchandiser`,
+			`Manage and design product(fashion, space)`,
 		],
 		startDate: new Date('2023-11'),
 		endDate: 'Current',

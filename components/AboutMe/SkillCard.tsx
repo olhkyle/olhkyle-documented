@@ -8,9 +8,9 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-	{ category: 'html/css', techStacks: ['HTML', 'CSS', 'SASS', 'Styled-Components', 'Emotion', 'TailwindCSS'] },
+	{ category: 'html/css', techStacks: ['HTML', 'CSS(Sass)', 'Styled-Components', 'Emotion', 'TailwindCSS'] },
 	{ category: 'js/ts', techStacks: ['JavaScript[ES6+]', 'TypeScript'] },
-	{ category: 'library', techStacks: ['React', 'Recoil', 'Redux Toolkit', 'React Query', 'Mantine'] },
+	{ category: 'library', techStacks: ['React', 'NextJS', 'Recoil', 'Redux Toolkit', 'React Query'] },
 	{ category: 'server side', techStacks: ['Node.js', 'Express.js'] },
 	{ category: 'collaboration tools', techStacks: ['Git', 'Github'] },
 	{ category: 'design tools', techStacks: ['Figma', 'Photoshop', 'Illustrator', 'Premiere Pro'] },
@@ -18,7 +18,7 @@ const skills: Skill[] = [
 
 export default function SkillCard() {
 	return (
-		<div className="mt-8 p-4 px-6 pb-8 rounded-[2rem] bg-gray-50 dark:bg-gray-900 sm:bg-none">
+		<div className="mt-8 p-4 px-6 pb-8 rounded-[2rem] bg-gray-900 text-gray-300 sm:bg-none">
 			<CardTitle>Skills</CardTitle>
 			<ul className="flex flex-col gap-2 mt-5 break-keep text-md">
 				{skills.map(({ category, techStacks }) => (

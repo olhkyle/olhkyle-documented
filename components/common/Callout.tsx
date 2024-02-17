@@ -8,7 +8,7 @@ export default function Callout({ margin, content, backgroundColor }: CalloutPro
 	return (
 		<div className={`flex gap-2 ${margin} mr-2 p-2 border-[1px] border-gray-300 rounded-lg ${backgroundColor}`}>
 			<span>💿</span>
-			<p className="font-medium responsive-text-gray">{content}</p>
+			<p className="font-medium text-sm text-gray-300">{content}</p>
 		</div>
 	);
 }

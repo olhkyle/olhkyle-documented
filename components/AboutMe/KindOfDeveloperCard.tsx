@@ -34,7 +34,7 @@ const kindOfDeveloper: KindOfDeveloper[] = [
 
 export default function KindOfDeveloperCard() {
 	return (
-		<div className="mt-8 p-4 px-5 pb-8 rounded-[2rem] bg-gray-50 dark:bg-gray-900 sm:bg-none">
+		<div className="mt-8 p-4 px-5 pb-8 rounded-[2rem] bg-gray-900 text-gray-300 sm:bg-none">
 			<CardTitle>As a Developer</CardTitle>
 			<ul className="flex flex-col gap-4 mt-5 font-medium break-keep responsive-text-gray">
 				{kindOfDeveloper.map(kind => (
