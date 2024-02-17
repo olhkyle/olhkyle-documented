@@ -28,12 +28,12 @@ export default function Project() {
 					formattedDate({ startDate, endDate }).split('-')[1] ?? 'Ongoing'
 				}]`}</div>
 			</div>
-			{wip && <Callout margin="mt-20" content="Work In Progress" backgroundColor="bg-gray-100 dark:bg-gray-800" />}
+			{wip && <Callout margin="mt-20" content="Work In Progress" backgroundColor="bg-gray-800" />}
 			{wip && (
 				<Callout
 					margin="mt-20"
 					content="Test ID : test1234@test.com / PW : test@#$1234"
-					backgroundColor="bg-gray-100 dark:bg-gray-800"
+					backgroundColor="bg-gray-800"
 				/>
 			)}
 			<ul className="flex flex-wrap justify-end mt-40 ml-auto gap-4">
@@ -52,7 +52,7 @@ export default function Project() {
 				<p className="font-medium text-sm sm:text-lg">{overviewEN}</p>
 				<button
 					type="button"
-					className="hover-ring w-[150px] h-[40px] border-[1px] border-dark dark:border-white rounded-full font-bold hover:text-blue-200 hover:border-0 text-xs sm:text-lg"
+					className="hover-ring w-[150px] h-[40px] border-[1px] border-text-gray-300 rounded-full font-bold hover:text-blue-200 hover:border-0 text-xs sm:text-lg"
 					onClick={() => {
 						const $target = imageContainerRef.current;
 

@@ -20,14 +20,14 @@ export default function Nav() {
 	return (
 		<>
 			<nav className="sticky top-0 px-[1rem] h-[80px] bg-dark/95 backdrop-blur sm:bg-dark sm:backdrop-blur-none z-40">
-				<div className="flex justify-between mx-auto md:w-[768px] lg:w-[1024px] xl:w-[1280px]">
+				<div className="flex justify-between mx-auto md:w-[640px] lg:w-[768px] xl:w-[1024px]">
 					<h1 className="flex-center ml-1 min-w-[130px] min-h-[80px] font-black text-2xl text-center cursor-pointer">
 						<Link href="/" className="font-mono underlined">
 							Olhkyle
 						</Link>
 					</h1>
 
-					<div className="hidden justify-between items-center gap-10 mt-1 ml-10 px-2 min-w-[440px] md:flex">
+					<div className="hidden justify-between items-center gap-10 mt-1 ml-10 px-2 md:flex">
 						<ul className="flex gap-3 items-center">
 							{links.slice(0, 3).map((link, idx) => (
 								<li key={idx}>
