@@ -20,7 +20,7 @@ export default function Nav() {
 	return (
 		<>
 			<nav className="sticky top-0 px-[1rem] h-[80px] bg-dark/95 backdrop-blur sm:bg-dark sm:backdrop-blur-none z-40">
-				<div className="flex justify-between mx-auto md:w-[640px] lg:w-[768px] xl:w-[1024px]">
+				<div className="flex justify-between mx-auto sm:w-[640px] md:w-[768px] lg:w-[1024px]">
 					<h1 className="flex-center ml-1 min-w-[130px] min-h-[80px] font-black text-2xl text-center cursor-pointer">
 						<Link href="/" className="font-mono underlined">
 							Olhkyle

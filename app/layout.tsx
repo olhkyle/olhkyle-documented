@@ -2,7 +2,6 @@ import './globals.css';
 import React from 'react';
 import type { Metadata } from 'next';
 import { Footer, Nav, ScrollToTopButton } from '@/components';
-import { cookies } from 'next/dist/client/components/headers';
 import { Schibsted_Grotesk } from 'next/font/google';
 
 export const metadata: Metadata = {
@@ -22,8 +21,6 @@ const schibsted_Grotesk = Schibsted_Grotesk({
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-	const cookie = cookies().get('theme');
-
 	return (
 		<html lang="en">
 			<head>
@@ -39,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)" />
 				<meta name="theme-color" content="#090b16" media="(prefers-color-scheme: dark)" />
 			</head>
-			<body data-theme={cookie && cookie.value} className={schibsted_Grotesk.className}>
+			<body className={schibsted_Grotesk.className}>
 				<Nav />
 				<main className="mx-auto px-[2rem] h-full sm:w-[640px] md:w-[768px] lg:w-[1024px]">{children}</main>
 				<Footer />

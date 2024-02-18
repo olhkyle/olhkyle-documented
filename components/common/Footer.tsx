@@ -29,7 +29,7 @@ export default function Footer() {
 		<footer className="mt-20 px-[2rem]">
 			<div className="flex justify-between items-center mx-auto py-5 border-t-[1px] font-medium border-gray-200 md:w-[768px] lg:w-[1024px] xl:w-[1280px]">
 				<div className="flex gap-2">
-					<span>© 2023</span>
+					<span>© {new Date().getFullYear()}</span>
 					<span className="font-semibold cursor-pointer" onClick={() => router.push('/')}>
 						Olhkyle
 					</span>

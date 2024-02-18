@@ -3,8 +3,9 @@ import { Cover, KindOfDeveloperCard, LanguagesCard, SkillCard } from '@/componen
 export default function AboutMe() {
 	return (
 		<>
-			<div className="flex justify-between gap-4 w-full sm:mt-[3rem]">
-				<h2 className="text-[2.5rem] font-bold break-keep sm:text-[2.5rem] md:text-[64px]">Kyle.</h2>
+			<div className="flex flex-col justify-between w-full sm:mt-[3rem]">
+				<span className="mt-5 ml-2 font-bold text-base sm:text-lg">kylekwon.dev@gmail.com</span>
+				<span className="ml-2 text-base sm:text-lg">Seoul, Korea</span>
 			</div>
 			<Cover />
 			<KindOfDeveloperCard />

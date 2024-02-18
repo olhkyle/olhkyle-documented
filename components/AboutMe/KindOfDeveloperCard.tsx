@@ -18,8 +18,6 @@ const kindOfDeveloper: KindOfDeveloper[] = [
 		content: [
 			`Before becoming a developer, I spent a long time studying and working in the fields of architecture and interior design, honing my ability to implement visually stunning creations. Through my experience in a field that requires both functionality and visual appeal, I have gained a deep understanding of the importance of visual composition and functionality.`,
 			`I have developed a keen interest in implementing excellent design and functionality not only in hardware but also in software. This naturally led me to delve into FrontEnd Development, where I could leverage my previous experiences to focus on creating great UI/UX and immerse myself in projects.`,
-			`For example, in a team project called FineApple, I recognized the lack of UI/UX quality in the initial planning phase of an Apple community feature. To address this, we planned and carried out a clone project aimed at improving the UI/UX. However, we didn't stop at cloning; instead, we extended the project timeline, changed the direction of the planning, and proceeded with development and deployment, incorporating the team's ideas for a better UI/UX community project.
-				`,
 		],
 	},
 	{

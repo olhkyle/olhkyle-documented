@@ -13,9 +13,9 @@ export default function NavLink({ link, currentPath, onClick }: NavLinkProps) {
 
 	return (
 		<div
-			className={`relative flex items-center px-2 py-[2px] text-xl font-bold ${isNavLinkCurrentPath} cursor-pointer hover:underline hover:underline-offset-[8px] min-w-[100px] clip-path-button`}
+			className={`relative flex items-center px-2 py-[2px] text-lg font-bold ${isNavLinkCurrentPath} hover:underline hover:underline-offset-[8px] min-w-[100px] clip-path-button`}
 			onClick={onClick}>
-			<Link href={link === 'Blog' ? BLOG : `/${link.toLowerCase()}`} className="w-full p-2">
+			<Link href={link === 'Blog' ? BLOG : `/${link.toLowerCase()}`} className="w-full p-2 cursor-pointer">
 				{link}
 			</Link>
 		</div>
